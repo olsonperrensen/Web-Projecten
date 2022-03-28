@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        visibility: hidden;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="DIVDIV">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vero
+      quibusdam magni aperiam accusamus nihil laborum temporibus, deserunt
+      excepturi minus quo et quas, repellendus incidunt illum neque vitae sequi
+      magnam!
+    </div>
+    <a href="#" onclick="test()">Click me</a>
+    <script>
+        let clickCounter = 0;
+        const myDIV = document.getElementById("DIVDIV");
+        function test() {
+          if (clickCounter === 0) {
+            myDIV.style.visibility = 'visible';
+            clickCounter++;
+          }
+          else{
+            myDIV.style.visibility = 'hidden';
+            clickCounter--;   
+          }
+        }
+      </script>
+  </body>
+</html>

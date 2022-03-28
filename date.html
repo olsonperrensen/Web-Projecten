@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var d = new Date();
+        var n = [d.getHours()+':'+d.getMinutes()]    
+        document.write(d + '<hr>' + n)
+        
+
+
+        var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+        var months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec');
+    
+        var date = new Date();
+        var onlytheDay = date.getDay();
+        var time = date.getHours();
+
+        document.write('<hr>' + time + '    <strong>ehm</strong>    ' + days[onlytheDay]);
+
+        if (time>7&&time<12)
+        {
+            alert('Good morning. Today is '+days[onlytheDay]+' '+date.getDate()+' '+months[date.getMonth()]+' '+date.getFullYear())
+        }
+        else
+        {
+            if (time>12 && time <18)
+            {
+                alert('Good afternoon. Today is '+days[onlytheDay]+' '+date.getDate()+' '+months[date.getMonth()]+' '+date.getFullYear())
+            }
+            if (time>18 && time <24)
+            {
+                alert('Good evening. Today is '+days[onlytheDay]+' '+date.getDate()+' '+months[date.getMonth()]+' '+date.getFullYear())
+            }
+            else
+            {
+                alert('Good night. Today is '+days[onlytheDay]+' '+date.getDate()+' '+months[date.getMonth()]+' '+date.getFullYear())
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

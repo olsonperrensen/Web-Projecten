@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>for ... in</title>
+</head>
+
+<body>
+
+  <script>
+    
+    document.write("<h2> The navigator object</h2>");
+    for(var field in navigator)
+    {
+      document.write("<strong>"+field+": </strong>"+navigator[field]+"<br />");
+    }
+    document.write("<hr />");
+
+    document.write("<h2> The window object</h2>");
+    for(var field in window)
+    {
+      document.write("<strong>"+field+": </strong>"+window[field]+"<br />");
+    }
+    document.write("<hr />");
+
+    document.write("<h2> The document object</h2>");
+    for(var field in navigator)
+    {
+      document.write("<strong>"+field+": </strong>"+document[field]+"<br />");
+    }
+    document.write("<hr />");
+
+  </script>
+  
+</body>
+</html>

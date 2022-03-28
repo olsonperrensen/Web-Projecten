@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="mark2.xsl"?>
+<Nashville>
+<person>
+<name>Mark</name>
+<age>23</age>
+<residence>House</residence>
+</person>
+<person>
+<name>Mark</name>
+<age>49</age>
+<residence>Trailer</residence>
+</person>
+<person>
+<name>Mark</name>
+<age>50</age>
+<residence>Mansion</residence>
+</person>
+</Nashville>

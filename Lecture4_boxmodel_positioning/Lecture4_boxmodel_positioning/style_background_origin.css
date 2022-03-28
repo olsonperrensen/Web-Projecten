@@ -1,0 +1,16 @@
+div
+{
+	padding:30px;
+	border:2px solid black;
+	background:url(flowers.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%
+}
+.div1
+{
+	background-origin:border-box
+}
+.div2
+{
+	background-origin:content-box
+}

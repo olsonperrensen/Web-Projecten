@@ -1,0 +1,12 @@
+p.yellow{  
+	color:yellow; 
+}
+
+p.blue{ 
+	color:blue; 
+}
+
+.important{
+    color:red;
+    text-decoration:underline
+}

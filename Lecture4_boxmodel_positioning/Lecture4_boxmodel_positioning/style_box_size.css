@@ -1,0 +1,19 @@
+p{
+	background-color:#0F0;
+	border-style:groove;
+	border-color:#000066;
+	border-width:5px;
+}
+p.style1{
+	padding:10px;
+	width:100px;
+}
+p.style2{
+	padding:50px;
+	width:100px;
+}
+p.style3{
+	padding:50px;
+	width:100px;
+	margin:50px;
+}

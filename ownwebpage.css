@@ -1,0 +1,173 @@
+.wrapper
+{min-width: 500px;
+max-width: 1200px;
+margin: auto;
+}
+
+div::after
+{
+content: "";
+display: block;
+clear: both;
+}
+
+.logo
+{
+    width: 70px;
+}
+
+img
+{
+    float: left;
+    border: solid 2px turquoise;
+    margin: 20px 20px;
+}
+
+strong
+{
+    float: left;
+    width: 80%; /* Later while retouching I 
+    made it really wide in order to 
+    center the text (now it has space)*/
+    margin: 20px 20px;
+    border: 2px solid turquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2em;
+    text-shadow: black 10px 9px 9px;
+    padding: 20px 0px; /* Get away from the
+    border's ceiling */
+    text-align: center;
+}
+
+header
+{
+    border: solid 2px turquoise;
+    background-color: blanchedalmond;
+    padding: 4.4px; /* Move logo and text both 
+    away from edge of header*/
+}
+header::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav{
+    display: block;
+    border: solid 2px turquoise;
+    background-color: deeppink;
+    text-align: center;
+}
+
+a /*Get rid of link formatting*/
+{
+    text-decoration: none;
+    color: black;
+}
+
+li
+{
+    display: inline-block;
+    border: solid 2px purple;
+    width: 150px;
+
+    padding: 5px;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+li:last-child:not(.ulhidchild)
+{
+    float: right;
+    width: auto;
+}
+
+li:hover:not(.page3):not(.page5)
+{
+    filter: invert(1);
+}
+
+.page3:hover .ulhid
+{
+    display: block; /*Cascading*/
+}
+
+.ulhid
+{
+    display: none;
+    position: absolute; /* Do not make 
+    Parent list item jump! As if it was not
+    taking part of the list at all. */
+}
+
+.ulhidchild
+{
+    display: block;
+    background-color: hotpink;
+}
+
+.webamp
+{
+width: 50%; /*This is tricky. Webamp comes
+with padding hard-coded.*/
+}
+
+.spectogram
+{
+width: 75%; /*That is why 2 appears to 
+have padding while 3 nor 1 do not*/
+padding: 10px;
+filter: invert(0);
+}
+
+.rightside
+{
+    float: left;
+    width: 20%;
+    margin-left: 5px;
+}
+
+.rightside::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rightside2
+{
+    margin-top:100px
+}
+
+.leftside
+{
+    float: left;
+    width: 78%;
+}
+
+footer
+{
+    border: solid 2px turquoise;
+    text-align: center;
+    margin: auto;
+    padding: 4px;
+    background-color: #708080;
+}
+
+.content
+{
+    background-color: #808090;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+div
+{
+    border: solid 2px purple;
+}
+p
+{
+    border: solid 2px turquoise;
+    text-align: justify;
+}

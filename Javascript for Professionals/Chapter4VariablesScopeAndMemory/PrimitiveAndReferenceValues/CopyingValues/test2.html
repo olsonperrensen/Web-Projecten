@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="findme">Here I am</p>
+    <script>
+        const myConst = document.getElementById("findme");
+        document.getElementById("findme").innerHTML = 
+"The text from the intro paragraph is " + myConst.innerHTML;
+        document.write("<p>Your defined class element is the following:</p>" + myConst + typeof(myConst));
+    </script>
+</body>
+</html>

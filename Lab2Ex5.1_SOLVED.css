@@ -1,0 +1,8 @@
+ol
+{
+    list-style-type:upper-roman
+}
+ul
+{
+    list-style-image: url('./startFiles_lab2/checkmark.jpg');
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function initialize() {
+        let pij = document.getElementById(`PI`);
+        pij.innerHTML = Math.PI;
+
+        let div = document.getElementById(`PLACEHOLDER`);
+        div.addEventListener(`mouseover`, MOUSEY, false);
+        div.addEventListener(`mouseout`, MOUSEY, false);
+      }
+      function MOUSEY() {
+        let div = document.getElementById(`PLACEHOLDER`);
+
+        let CE = document.createElement(`strong`);
+        let CT = document.createTextNode(` ME! `);
+        CE.appendChild(CT);
+        div.appendChild(CE);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="PLACEHOLDER">
+      You used to hold
+      <pre id="PI"></pre>
+    </div>
+  </body>
+</html>

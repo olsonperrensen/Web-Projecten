@@ -1,0 +1,28 @@
+body{
+  font-family:Arial, Helvetica, Sans-serif
+}
+
+fieldset{
+  width:24em;
+  margin:1em;
+  padding:1em;
+  border:1px solid #006699
+}
+
+
+label{
+  width:7em;
+  float:left;
+  text-align:right;
+  margin-right:0.5em
+}
+
+input.textfield{
+  width:18em;
+  border:1px solid #999999
+}
+
+input.textfield:focus{
+  background-color:#FFFFCC;
+  border:1px solid #FFCC99
+}

@@ -1,0 +1,10 @@
+Example of a Definition List
+
+TCP
+   Transmission Control Protocol is a method (protocol) used together with the Internet Protocol (IP) to transmit and share data, called packets, between computers on the Internet.
+IP
+    Internet Protocol is a set of rules that control how data is sent between computers on the Internet. Each computer is uniquely determined with an IP address.
+FTP
+    File Transfer Protocol is a protocol created to exchange files between computers on the Internet.
+HTTP
+    Hypertext Transfer Protocol is the protocol used to exchange text, images, sound, video and other multimedia files on the Web. 

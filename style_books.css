@@ -1,0 +1,10 @@
+*
+{
+    border: 22px solid pink;
+    background-color: yellow;
+    border-collapse: collapse;
+}
+td,th
+{
+    border: 1pt solid black
+}

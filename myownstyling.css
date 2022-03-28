@@ -1,0 +1,18 @@
+table, tr, td, th, caption, body {
+    word-wrap: break-word;
+    border: 3px solid pink;
+
+  }
+  table
+  {
+    table-layout: fixed;
+    width: 50%;
+    text-align: center;
+    transform: translate(50%);    
+}
+table::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}

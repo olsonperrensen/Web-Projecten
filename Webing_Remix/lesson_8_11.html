@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function initialize() {
+        let selector = document.getElementById(`selector`);
+        selector.addEventListener(`change`, colorChanger, false);
+      }
+      function colorChanger() {
+        let myColor = selector.value;
+        document.body.style.backgroundColor = myColor;
+      }
+    </script>
+    <style>
+      * {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body onload="initialize()">
+    <select name="" id="selector">
+      <optgroup disabled label="COLOR CHOOSER v1.0"></optgroup>
+      <optgroup id="enabledopt" label="Primary Colors">
+        <option id="v1" value="red">red</option>
+        <option id="v2" value="green">green</option>
+        <option id="v3" value="blue">blue</option>
+        <option value="cyan">cyan</option>
+        <option value="magenta">magenta</option>
+        <option value="beige">beige</option>
+        <option value="maroon">maroon</option>
+        <option value="skyblue">skyblue</option>
+        <option value="pink">pink</option>
+        <option value="purple">purple</option>
+        <option value="violet">violet</option>
+      </optgroup>
+    </select>
+  </body>
+</html>

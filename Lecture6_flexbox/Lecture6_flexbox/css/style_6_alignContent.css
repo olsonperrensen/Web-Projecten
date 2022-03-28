@@ -1,0 +1,23 @@
+.flex-container {
+    width: 200px;
+    height: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+}
+
+img{
+    width: 100px;
+}
+
+.large {
+    width: 150px;
+}
+
+.small {
+    width: 50px;
+}

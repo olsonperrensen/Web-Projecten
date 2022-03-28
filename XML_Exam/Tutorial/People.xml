@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<people>
+<husband>
+<name>Mark</name>
+<age>25</age>
+<wife>
+<wname>Anna</wname>
+<age>29</age>
+</wife>
+</husband>
+<husband>
+<name>Mark</name>
+<age>79</age>
+<wife>
+<wname>Linda</wname>
+<age>62</age>
+</wife>
+</husband>
+</people>

@@ -1,0 +1,11 @@
+table{
+border: 1px solid black;
+border-collapse: collapse;
+background-color: yellow;
+width: 50%;
+margin: 0 auto;
+}
+td, th, caption
+{
+    border: 1px solid black;
+}

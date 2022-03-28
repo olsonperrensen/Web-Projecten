@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let ask = parseInt(prompt('Enter a number'));
+      ask = ask % 2;
+      if (ask == 0) {
+        let result = alert(`Your number is even`);
+      } else {
+        let result2 = alert(`Your number is odd`);
+      }
+    </script>
+    <script>
+      let ask2 = parseInt(prompt('Enter a number again'));
+      ask2 = ask2 % 2;
+      switch (ask2) {
+        case 0:
+          let result3 = alert(`Your number is even again`);
+          break;
+        case 1:
+          let result4 = alert(`Your number is odd again`);
+          break;
+        default:
+          let error2 = alert(`Whoops, you did not type a number!`);
+          break;
+      }
+    </script>
+    <script>
+      let QA = parseInt(prompt('Which month number are we today?'));
+      let x;
+      switch (QA) {
+        case 1:
+          x = `January`;
+          break;
+        case 2:
+          x = `February`;
+          break;
+        case 3:
+          x = `March`;
+          break;
+        case 4:
+          x = `April`;
+          break;
+        case 5:
+          x = `May`;
+          break;
+        case 6:
+          x = `June`;
+          break;
+        case 7:
+          x = `July`;
+          break;
+        case 8:
+          x = `August`;
+          break;
+        case 9:
+          x = `September`;
+          break;
+        case 10:
+          x = `October`;
+          break;
+        case 11:
+          x = `November`;
+          break;
+        case 12:
+          x = `December`;
+          break;
+        default:
+          x = `a non-existing month... Please enter a number from range 1 to 12`;
+          break;
+      }
+      alert(`We are in ${x}`);
+    </script>
+  </head>
+  <body></body>
+</html>

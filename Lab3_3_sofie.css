@@ -1,0 +1,50 @@
+h1
+{
+    text-align: center;
+}
+
+hr
+{
+    border-width: 2px;
+}
+
+fieldset
+{
+    background-color: lightgoldenrodyellow;
+    /*height: 942px;  */                            /*try not to fix the height of your blocks*/
+    width: 40%;
+}
+
+body
+{
+    color: blue;
+    margin: 200px;
+}
+
+table
+{
+    font-weight: bold;
+    margin: 0px 199px;
+    width: 80%;                 /*I set a width for the table to be able to set a width for the first column*/
+}
+
+td{
+    padding: 47px;  
+}
+
+input
+{
+    margin: 0px 18px;
+}
+
+button
+{
+    padding: 4px;
+    margin: 12px;
+}
+
+.textLabel {                    /*this class was added to style the first column differently*/
+    text-align: left;
+    padding:47px 5px;
+    width:20%;
+}

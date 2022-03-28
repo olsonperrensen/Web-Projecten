@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Lecture4_4.css">
+    <title>Document</title>
+</head>
+<body>
+ <form action="mailto:r0834721@student.thomasmore.be" method="POST" enctype="text/plain">
+<h1>Demonstration of the form element</h1>
+<h2>Place here your reaction.</h2>
+    <fieldset>
+        <legend>My data</legend>
+    <div class="gender">
+        <input class="radiobutton textfield" type="radio" name="sex" id="mr" value="mr">
+        <label class="radiobutton textlabel" for="mr">Mr.</label>
+        <input class="radiobutton textfield"  type="radio" name="sex" id="mrs" value="mrs">
+        <label class="radiobutton textlabel" for="mrs">Mrs.</label>
+    </div>
+    <label for="name">first name and last name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email">    
+</fieldset>
+<fieldset>
+    <legend>Type of reaction</legend>
+    <input type="file" name="file" id="file" title="choose" placeholder="choose">
+</fieldset>
+<fieldset>
+    <legend>My reaction</legend>
+    <textarea name="largetext" id="largetext" cols="20" rows="5"></textarea>
+    <br>
+    <input type="checkbox" name="agree" id="agree" value="userAgrees">
+<label for="agree">Send a copy to me by email</label>
+</fieldset>
+<input class="sent" type="submit" name="" id="">
+</form>   
+</body>
+</html>

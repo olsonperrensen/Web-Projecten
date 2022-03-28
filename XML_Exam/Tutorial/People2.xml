@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="people3.xsl" ?>
+<people xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="people.xsd">
+<husband employed="yes">
+<name>Mark</name>
+<age>42</age>
+<wife>
+<wname>Ann</wname>
+<age>22</age>
+</wife>
+</husband>
+
+<husband employed="no">
+<name>Mark</name>
+<age>54</age>
+<wife>
+<wname>Leentje</wname>
+<age>53</age>
+</wife>
+</husband>
+
+<husband employed="no">
+<name>Bob</name>
+<age>54</age>
+<wife>
+<wname>Leentje</wname>
+<age>53</age>
+</wife>
+</husband>
+
+<husband employed="no">
+<name>Matthew</name>
+<age>24</age>
+<wife>
+<wname>Alegra</wname>
+<age>22</age>
+</wife>
+</husband>
+
+<husband employed="no">
+<name>Rennard</name>
+<age>24</age>
+<wife>
+<wname>Samantha</wname>
+<age>22</age>
+</wife>
+</husband>
+
+</people>

@@ -1,0 +1,14 @@
+.tiny
+{
+height: 10%;
+width: 10%;
+}
+div
+{
+    border: solid 1px red;
+    width: 25%;
+}
+a
+{
+    text-decoration: none;
+}

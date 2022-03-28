@@ -1,0 +1,47 @@
+body{
+	background-color:#FFFFCC;
+	color:#630;
+	margin:20px;
+}
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	margin:20px 0px;
+}
+h2 {
+	font-size: 150%;
+	margin: 20px 0px;
+}
+p {
+	margin: 20px 0px;
+}
+fieldset{
+	border:3px solid #630;
+	width:500px;
+	margin-top:20px;
+	padding:10px;
+}
+legend{
+	background-color:#630;
+	color:#FFF;
+	padding:5px;
+}
+label.textlabel{
+	width:200px;
+	text-align:left;
+	float:left;
+}
+input.textfield{
+	width:250px;
+	border:2px inset;
+}
+.radiobutton{
+	position:relative;
+	left:150px;
+}
+select{
+	width:150px;
+}
+input.send{
+	margin:15px;
+}

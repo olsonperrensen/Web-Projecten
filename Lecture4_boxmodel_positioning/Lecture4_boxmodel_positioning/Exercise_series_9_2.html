@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 9.2</title>
+  <link href="reset.css" rel="stylesheet" />
+  <link href="style_Exercise9_2.css" rel="stylesheet" />
+  </head>
+  <body>
+  	<h1> Demonstration of the form element</h1>
+    <h2> Place here your reaction. </h2>
+    <form action="mailto:sofie.beerens@thomasmore.be" method="post" enctype="text/plain">
+    	<fieldset>
+        	<legend>My data</legend>
+            <p>
+                <input class="radiobutton" type="radio" name="title" value="Mr" id="Mr" />
+                <label class="radiobutton" for="Mr">Mr</label>
+                <input class="radiobutton" type="radio" name="title" value="Mrs" id="Mrs" checked="checked" />
+                <label class="radiobutton" for="Mrs">Mrs</label>
+            </p>
+            <p>
+                <label class="textlabel" for="name">first name and last name</label>
+                <input type="text" class="textfield" name="name" id="name" />
+            </p>
+            <p>
+                <label class="textlabel" for="mail">email</label>
+                <input type="email" class="textfield" name="mail" id="mail" />
+            </p>
+        </fieldset>
+        <fieldset>
+        	<legend>Type of reaction</legend>
+            <select name="reactionType">
+            	<option value="none">choose</option>
+                <option value="complaint">complaint</option>
+                <option value="suggestion">suggestion</option>
+            </select>
+        </fieldset>
+        <fieldset>
+        	<legend>My reaction</legend>
+            <p>
+                <textarea name="reaction"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="copy">
+                Send a copy to me by email.
+            </p>
+        </fieldset>
+       
+        <input class="send" type="submit" value="Send" />
+   </form>
+  </body>
+</html>

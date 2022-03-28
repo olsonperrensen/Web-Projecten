@@ -1,0 +1,21 @@
+div
+{
+	border:30px solid transparent;
+	width:250px;
+	padding:10px 20px;
+	margin-bottom:50px;
+}
+
+.round
+{
+	-moz-border-image:url(border.png) 30 30 round; /* Firefox */
+	-webkit-border-image:url(border.png) 30 30 round; /* Safari and Chrome */
+	border-image:url(border.png) 30 30 round
+}
+
+.stretch
+{
+	-moz-border-image:url(border.png) 30 30 stretch; /* Firefox */
+	-webkit-border-image:url(border.png) 30 30 stretch; /* Safari and Chrome */
+	border-image:url(border.png) 30 30 stretch
+}

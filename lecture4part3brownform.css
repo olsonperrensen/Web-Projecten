@@ -1,0 +1,46 @@
+form{
+    border: solid 8px brown;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+fieldset
+{
+    border: solid 3px brown;
+    padding: 12px;
+}
+body
+{
+    background-color: wheat;
+}
+h2, h1
+{
+    color: brown;
+}
+legend
+{
+    color: white;
+    background-color: brown;
+}
+.radio1
+{
+    margin-left: 70px;
+}
+.radio1
+{
+    margin-left: 139px;
+}
+.llabel
+{
+    display: inline-block;
+    width: 220px;
+    text-align: right;
+    }
+textarea
+{
+    display: block;
+}
+button
+{
+    margin: 20px 92px;
+}

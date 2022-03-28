@@ -1,0 +1,10 @@
+ul{
+  font-family:Verdana, Arial, Sans-serif;
+  list-style-type: none;
+  border: 1px dashed #CCCCCC;
+  padding: 10px
+}
+li{
+  margin-top: 0.5em
+}
+  

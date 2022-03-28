@@ -1,0 +1,90 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="neighbours.xsl"?>
+
+<neighbours>
+    <country stateForm="monarchy">
+        <countryName>Belgium</countryName>
+        <capital>Brussels</capital>
+        <code>B</code>
+        <headOfState>
+            <name title="King">Filip</name>
+            <partner title="Queen">Mathilde</partner>
+        </headOfState>
+        <family>
+            <child>
+                <name title="Princess">Elisabeth</name>
+            </child>
+            <child>
+                <name title="Prince">Gabriël</name>
+            </child>
+            <child>
+                <name title="Prince">Emmanuel</name>
+            </child>
+            <child>
+                <name title="Princess">Eléonore</name>
+            </child>
+        </family>
+    </country>
+    <country stateForm="monarchy">
+        <countryName>Great Britain</countryName>
+        <capital>London</capital>
+        <code>GB</code>
+        <headOfState>
+            <name title="Queen">Elisabeth</name>
+            <partner title="Prince">Philip</partner>
+        </headOfState>
+        <family>
+            <child>
+                <name title="Prince">Charles</name>
+                <partner>Camilla</partner>
+            </child>
+            <child>
+                <name title="Princess">Anne</name>
+                <partner>Tim</partner>
+            </child>
+            <child>
+                <name title="Prince">Andrew</name>
+            </child>
+            <child>
+                <name title="Prince">Edward</name>
+                <partner>Sophie</partner>
+            </child>
+        </family>
+    </country>
+    <country stateForm="federalRepublic ">
+        <countryName>Germany</countryName>
+        <capital>Berlin</capital>
+        <code>D</code>
+        <headOfState>
+            <name>Angela Merkel</name>
+        </headOfState>
+    </country>
+    <country stateForm="republic ">
+        <countryName>France</countryName>
+        <capital>Paris</capital>
+        <code>F</code>
+        <headOfState>
+            <name>Nicolas Sarkozy</name>
+        </headOfState>
+    </country>
+    <country stateForm="monarchy">
+        <countryName>Netherlands</countryName>
+        <capital>Amsterdam</capital>
+        <code>NL</code>
+        <headOfState>
+            <name title="King">Willem Alexander</name>
+            <partner title="Queen">Maxima</partner>
+        </headOfState>
+        <family>
+            <child>
+                <name title="Princess">Catharina-Amalia</name>
+            </child>
+            <child>
+                <name title="Princess">Alexia</name>
+            </child>
+            <child>
+                <name title="Princess">Ariane</name>
+            </child>
+        </family>
+    </country>
+</neighbours>

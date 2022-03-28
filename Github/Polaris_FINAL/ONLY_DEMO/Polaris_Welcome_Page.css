@@ -1,0 +1,23 @@
+span {
+  background-color: rgb(212, 27, 104);
+}
+.bear {
+  background-color: cornflowerblue;
+}
+.maintext {
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+  padding: 10px;
+  box-shadow: 2px 5px 13px 10px #888888;
+}
+* {
+  background-color: #9467f9;
+}
+.simple {
+  font-size: 1.8rem;
+  padding: 12px;
+}
+.simple::first-letter {
+  font-size: 4rem;
+}

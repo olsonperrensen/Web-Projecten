@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exam.xsl"?>
+<city>
+<department>
+<name>defense</name>
+</department>
+<department>
+<name>education</name>
+</department>
+<department>
+<name>justice</name>
+</department>
+</city>

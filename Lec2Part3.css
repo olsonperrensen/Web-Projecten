@@ -1,0 +1,29 @@
+td
+{
+    border: 7px dotted yellowgreen;
+    text-align: end;
+    padding: 13px;       
+    background-color: aquamarine;
+    
+}
+
+tr:nth-child(odd)
+{
+font-style: italic;
+}
+
+table
+{
+    border: 7px double orange;
+    
+    color: pink;
+    
+    border-spacing: 19px;
+    
+    background-color: cornflowerblue;
+
+   border-collapse: separate;
+
+   table-layout: fixed;
+    width: 700px;
+}

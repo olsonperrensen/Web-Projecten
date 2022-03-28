@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let div;
+      function initialize() {
+        div = document.getElementById(`PLACEHOLDER`);
+        div.addEventListener(`click`, clik, false);
+      }
+      function clik() {
+        let e = window.event;
+        let createElement = document.createElement(`h3`);
+        let createText = document.createTextNode(`${e.screenX} AND ${e.screenY}`);
+        createElement.appendChild(createText);
+        div.appendChild(createElement);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="PLACEHOLDER">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+        molestiae dignissimos fuga dolor, repellat vel nemo molestias alias,
+        provident dicta, asperiores dolores nostrum perferendis! Sit eveniet
+        eius magni accusamus aspernatur.
+      </p>
+    </div>
+  </body>
+</html>

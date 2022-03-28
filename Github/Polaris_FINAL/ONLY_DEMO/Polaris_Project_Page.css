@@ -1,0 +1,26 @@
+span {
+  background-color: gray;
+}
+.bear {
+  background-color: black;
+}
+.maintext {
+  flex-direction: row;
+  align-items: space-between;
+}
+* {
+  background-color: #9467f9;
+}
+.bldiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.ll {
+  padding: 50px;
+  margin: 23px;
+}
+object {
+  width: 100%;
+  height: 560px;
+}

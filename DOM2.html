@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+function mouseOver(){
+document.getElementById("logo").src = "/bodywp.png"
+}
+function mouseOut(){
+    document.getElementById("logo").src = "/webamp.png"
+}
+</script>
+</head>
+<body>
+<img src="/webamp.png" id="logo" alt="" onmouseover="mouseOver()" onmouseout="mouseOut()">
+</body>
+</html>

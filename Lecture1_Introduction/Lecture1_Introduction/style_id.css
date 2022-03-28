@@ -1,0 +1,13 @@
+#header{
+    background-color: #EC4B2F;
+    color: white;
+    text-align:center;
+    margin:20px;
+    padding:50px 10px;
+    border:1px solid black
+}
+#content{
+    background-color:#009CAB;
+    margin:20px;
+    padding:50px 10px;
+}    

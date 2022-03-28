@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function initialize() {
+        let popup = document.getElementById(`popup`);
+        popup.addEventListener(`mouseover`, popupO, false);
+      }
+      function popupO() {
+        let windowPROPS = `height=200,width=800,top=200`;
+        let newPOP = window.open(``, `tabname`, windowPROPS);
+        let HTMLPOP = `<!DOCTYPE html><head><meta charset="UTF-8" /><title>TEST</title></head><h1>YOU_FIXED_THE_NETWORK!</h1>`;
+        newPOP.document.write(`${HTMLPOP}${new Date()}`);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <p>PLACEHOLDER</p>
+    <p><button id="popup">POP-UP OPENER</button></p>
+  </body>
+</html>

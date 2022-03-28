@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     var flag = "green";
+    var timer1;
+    function begin_bg(){
+        timer1 = window.setInterval("change()", 5000)
+    }
+    function change()
+    {
+        if (flag=="green")
+        {
+            document.body.style.backgroundColor = "red";
+            flag = "red";
+
+        }
+        else
+        {
+            document.body.style.backgroundColor = "green";
+            flag = "green";
+        }
+    }
+    </script>
+</head>
+<body onload="begin_bg()">
+    
+</body>
+</html>

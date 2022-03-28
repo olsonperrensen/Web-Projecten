@@ -1,0 +1,40 @@
+/* --------------------------- BEGIN GENERAL LAYOUT --------------------------- */
+*{margin: 0px;padding: 0px;}
+body{margin: 40px;font-family:Arial,Verdana,sans-serif;}
+/* --------------------------- END GENERAL LAYOUT --------------------------- */
+
+h1
+{
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 15px;
+	margin-left: 32px;
+}
+
+#iphone
+{
+	width: 345px; 
+	height:600px;
+	background:url(../images/iphone.jpg) top left no-repeat;
+	float: left;
+}
+
+#text1 p
+{
+	line-height: 1.5em;
+	font-size: 0.9em;
+	padding-top: 10px;
+}
+
+
+#iphonescreen
+{
+	width: 240px;
+	height: 360px;
+
+	margin-top: 86px;
+	margin-left: 51px;
+	background:url(../images/iphonescreen.jpg) top left no-repeat;
+}
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="jqueryS.css" />
+  </head>
+  <body>
+    <div id="theDIV">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem amet non
+      dolore itaque officia. Aliquid, praesentium illum! Aspernatur veritatis
+      soluta consequatur recusandae, necessitatibus, nisi earum vel dolorem
+      deserunt quidem corporis.
+    </div>
+    <a href="#" id="theLINK" onclick="myClickFn()">Toggle Help</a>
+  <script>
+    var theLINKCounter = 0;
+let myLINK = document.getElementById('theLINK');
+let myDiv = document.getElementById('theDIV');
+function myClickFn() {
+  myDiv.style.visibility = 'visible';
+}
+  </script>
+  </body>
+</html>

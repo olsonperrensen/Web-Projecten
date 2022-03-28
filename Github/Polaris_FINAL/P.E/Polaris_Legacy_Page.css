@@ -1,0 +1,25 @@
+span {
+    background-color: white;
+    color: black;
+  }
+  .bear {
+    background-color: black;
+  }
+  .maintext {
+    flex-direction: row;
+    align-items: space-between;
+  }
+  * {
+    background-color: #ad0559;
+  }
+  .background {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    z-index: 0;
+    margin: 20px;
+  }
+  .iframe {
+    height: 720px;
+    width: 100%;
+  }

@@ -1,0 +1,35 @@
+.nav, .nav ul { /* all lists */
+	line-height: 1;
+}
+.nav a {
+	display: block;
+	width: 10em;
+	color : black;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid black;
+	padding:2px;
+}
+.nav li a:hover {
+	color : white;
+	background-color : black;
+}
+.nav li { /* all list-items */
+	float: left;
+	width: 10.3em;
+}
+.nav li ul { /* lists second level */
+	position: absolute;
+	width: 10em;
+	display:none ;
+}
+.nav li ul ul { /* lists third level and higher */
+	margin: -1em 0 0 10em;
+}
+.nav li.float ul ul {
+	display:none;
+}
+.nav li.float ul, .nav li li.float ul { /* lists nested inside 'hovered' list items */
+	display:block;
+}

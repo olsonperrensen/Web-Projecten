@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>My paragraph</p>
+    <ul>
+      <li>
+        AALorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui
+        tempora magnam nulla. Magni, voluptatem dolores obcaecati sint magnam
+        esse neque explicabo illo quae, consectetur dignissimos veritatis.
+        Recusandae, ad eius?
+      </li>
+      <li>
+        BBLorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iure
+        laboriosam ut voluptates, nemo maiores vitae cum numquam quo tempora
+        deserunt eaque ad molestiae neque magni exercitationem temporibus
+        repudiandae? Dolorem?
+      </li>
+      <li>
+        CCLorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui
+        tempora magnam nulla. Magni, voluptatem dolores obcaecati sint magnam
+        esse neque explicabo illo quae, consectetur dignissimos veritatis.
+        Recusandae, ad eius?
+      </li>
+      <li>
+        DDLorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iure
+        laboriosam ut voluptates, nemo maiores vitae cum numquam quo tempora
+        deserunt eaque ad molestiae neque magni exercitationem temporibus
+        repudiandae? Dolorem?
+      </li>
+      <li>
+        EE Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui
+        tempora magnam nulla. Magni, voluptatem dolores obcaecati sint magnam
+        esse neque explicabo illo quae, consectetur dignissimos veritatis.
+        Recusandae, ad eius?
+      </li>
+      <li>
+        FFLorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iure
+        laboriosam ut voluptates, nemo maiores vitae cum numquam quo tempora
+        deserunt eaque ad molestiae neque magni exercitationem temporibus
+        repudiandae? Dolorem?
+      </li>
+      <li>
+        GGLorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui
+        tempora magnam nulla. Magni, voluptatem dolores obcaecati sint magnam
+        esse neque explicabo illo quae, consectetur dignissimos veritatis.
+        Recusandae, ad eius?
+      </li>
+      <li>
+        HHLorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iure
+        laboriosam ut voluptates, nemo maiores vitae cum numquam quo tempora
+        deserunt eaque ad molestiae neque magni exercitationem temporibus
+        repudiandae? Dolorem?
+      </li>
+    </ul>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      var oldText;
+      let i = 0;
+      $(function () {
+        $('ul li').each(function (index) {
+          oldText = $(this).text();
+          $(this).text(oldText + index++);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A time-tracking application</title>
+    <link rel="stylesheet" href="tracking_iframe_style.css" />
+  </head>
+  <body>
+    <h1>TimeLog</h1>
+
+    <figure class="clock">
+      <div class="mins">00</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    
+
+    <div class="btn-group">
+      <button class="start">start focus</button>
+      <button class="reset">reset</button>
+      <button class="pause">pause</button>
+    </div>
+
+    <form action=".">
+      <label for="focusTime">Focus Time</label>
+      <input type="number" value="0" id="focusTime" />
+      <label for="breakTime">Break Time</label>
+      <input type="number" value="0" id="breakTime" />
+      <label for="completed task">completed task</label>
+      <input type="text" name="task" id="completed task"/>
+      <label for="currenttask">current task</label>
+      <input type="text" name ="task" id="current task"/>
+      <button type="reset">Reset</button>
+      <button type="submit">Save settings</button>
+    </form>
+
+    <div class="my-5">
+
+       <h3 id="done" class="text-center"></h3>
+    </div>
+    <footer>
+      
+      @polaris Time Application
+      
+    </footer>
+
+    <script src="tracking_iframe_main_script.js"></script>
+    <script src="tracking_iframe_time.js"></script>
+    <script src="tracking_iframe_function.js"></script>
+  </body>
+</html>
+

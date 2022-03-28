@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator ex 18.1</title>
+  <script>
+	function sumf()
+	{
+		var n1=document.getElementById("number1");
+		var n2=document.getElementById("number2");
+		var res=document.getElementById("result");
+		res.value= parseFloat(n1.value)+parseFloat(n2.value);
+	}
+  </script>
+</head>
+<body>
+  <h2>Calculator</h2>
+  <form action="#">
+		<p>number 1:<input type="text" id="number1" /></p>
+		<p>number 2:<input type="text" id="number2" /></p>
+		<hr />
+		<p>
+			<input type="button" value=" + " onClick="sumf()" />
+			<input type="reset" value="Erase numbers" />
+		</p>    
+		<hr />
+		<p>Result:<input type="text" id="result" onFocus="blur()" /></p>
+		<hr />
+   </form>
+</body>
+</html>

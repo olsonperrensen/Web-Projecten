@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //   function multiply(number1, number2) {
+      //     return number1 * number2;
+      //   }
+      //   console.log(multiply(22, 593.1));
+      //   let pij = Math.PI;
+      //   let floor = Math.floor(pij);
+
+      //   let ceil = Math.ceil(pij);
+
+      //   let round = Math.round(pij);
+
+      //   let random = Math.random();
+
+      //   console.log(pij, floor, ceil, round, random * 44);
+    </script>
+    <script>
+      //   let theresult;
+      //   function myFun(n1, n2, n3, n4) {
+      //     // return n1 * n2 * n3 * n4;
+      //     theresult = n1 * n2 * n3 * n4;
+      //     return (
+      //       'Operation succeeded ... ' +
+      //       `Your numbers combined make up ${theresult}`
+      //     );
+      //   }
+      //   let myr = myFun(1, 2, 3, 4);
+    </script>
+    <script>
+      //   let Celsius_inner_fn, Fahrenheit, Celsius_Conversion;
+
+      //   function FahrenheitToCelsius(PLACEHOLDER) {
+      //     Celsius_inner_fn = (5 * (PLACEHOLDER - 32)) / 9;
+      //     return Celsius_inner_fn;
+      //   }
+
+      //   for (Fahrenheit = -10; Fahrenheit <= 100; Fahrenheit += 5) {
+      //     Celsius_Conversion = FahrenheitToCelsius(Fahrenheit);
+      //     console.log(Fahrenheit, parseFloat(Celsius_Conversion.toFixed(2)));
+      //   }
+    </script>
+    <script>
+      let chances, q1, q2, q3, q4;
+
+      q1 = prompt(`9+10?`);
+      //q2 = prompt(`2+3?`);
+      //q3 = prompt(`5+2?`);
+      //q4 = prompt(`10+10?`);
+
+      myCheck(q1);
+      //myCheck(q2);
+      //myCheck(q3);
+      //myCheck(q4);
+
+      function myCheck(q) {
+        var i = 0;
+        var correct = false;
+        var reaction = ' ';
+        var answer;
+        while (i < 3 && !correct) {
+          answer = prompt(`${reaction} How much is ${q}?`, 0);
+          correct = answer == eval(q);
+
+          if (!correct) {
+            reaction = `${q} is NOT ${answer}`;
+            i++;
+          }
+
+          if (correct) {
+            alert(`Correct. NEXT`);
+          } else {
+            alert(`Incorrect. ANSWER: ${eval(q)}`);
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="t"></h1>
+    <h2>Sine table</h2>
+    <table>
+      <tr>
+        <th>angle</th>
+        <th>sine</th>
+      </tr>
+      <script>
+        // var angle, radians, sine;
+        // for (angle = 0; angle <= 360; angle += 30) {
+        //   radians = (angle * Math.PI) / 180;
+        //   sine = Math.sin(radians);
+        //   document.write(
+        //     `<tr><td>${angle}</td><td>${sine.toFixed(2)}</td></tr>`
+        //   );
+        // }
+      </script>
+    </table>
+    <script>
+      function thanks() {
+        let thank_you = `See you next time.`;
+        document.getElementById('t').innerHTML = thank_you;
+      }
+      thanks();
+    </script>
+  </body>
+</html>

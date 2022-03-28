@@ -1,0 +1,35 @@
+#portfolio{
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+        
+#button{
+	  text-align: center;
+	  width: 100%;
+	  margin-top: 20px;
+}
+	  
+#button img{
+	  border: none;	
+}
+  
+#feedback{
+	  margin-top: 20px;
+	  text-align: center;
+	  height: 30px;
+}
+  
+#loadingbar{
+	  height: 10px;
+	  width: 600px;
+	  margin-left: auto;
+	  margin-right: auto;
+}
+
+#bar{
+	  height: 10px;
+	  background-color: orange;
+	  width: 0px;
+}

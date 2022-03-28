@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let YOUR_NAME = prompt('What is your name?');
+      let PROMPT;
+
+      function _MyPrompt() {
+        PROMPT = confirm(
+          `The name you entered is ${YOUR_NAME} . Is this correct?`
+        );
+        return _MyPrompt;
+      }
+
+      _MyPrompt();
+
+      if (PROMPT) {
+        document.write(`Welcome, ${YOUR_NAME}`);
+      } 
+      else {
+          _MyPrompt()
+          document.write(`You have skipped the popup.`)
+      }
+    </script>
+  </body>
+</html>

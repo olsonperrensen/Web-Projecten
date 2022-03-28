@@ -1,0 +1,51 @@
+span {
+  background-color: black;
+}
+.bear {
+  background-color: white;
+}
+.maintext {
+  flex-direction: row;
+  align-items: space-between;
+}
+* {
+  background-color: #f96767;
+}
+#thebutton {
+  background-color: black;
+}
+.p1 {
+  width: 30%;
+  margin: 9px;
+  padding: 12px;
+}
+.p2 {
+  width: 30%;
+  margin: 9px;
+  padding: 12px;
+}
+.p3 {
+  width: 30%;
+  margin: 9px;
+  padding: 12px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.polaris_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.polaris_alpha,
+.polaris_beta,
+.polaris_delta {
+  width: 22%;
+  padding: 5px;
+  border: groove 9px turquoise;
+}
+.inputstart {
+  width: 6%;
+}

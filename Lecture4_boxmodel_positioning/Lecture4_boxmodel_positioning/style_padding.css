@@ -1,0 +1,13 @@
+p{
+	background-color:#0F0;
+}
+p.padding1{
+	padding-left:10px
+}
+p.padding2{
+	padding-left:50px
+}
+p.padding3{
+	padding-left:100px;
+	padding-top:100px;
+}

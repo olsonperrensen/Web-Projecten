@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>JavaScript application</title>
+  <meta charset="UTF-8" />
+  <script>
+    
+    function thanks()
+    {
+    	var s= 'That\'s it.<br />'+
+              'Thank you for answering the questions<br />'+
+              'See you next time.';
+      document.getElementById("output").innerHTML=s;
+    }
+
+    function askQuestion(question)
+    {
+      var i=0;
+      var correct=false;
+      var reaction="";
+      var answer;
+      while(i<3 && !correct)
+      {
+        answer = prompt(reaction+'How much is ' + question + ' ?',0);
+        correct = (answer == eval(question));
+        if(!correct)
+            reaction = question + ' is NOT ' + answer + '\n';
+        i++;
+      }
+      if(correct)
+        alert('Your answer was correct, next question');
+      else
+        alert('The correct answer was: '+question+' = '+eval(question));
+    }
+  </script>
+</head>
+<body>
+  <h3>Test your knowledge: mathematical exercise</h3>
+  <p id="output"></p>
+  <script>
+  	var question1="23+45";
+    var question2="231/7";
+    var question3="5+7*56/8";
+    var question4="213%7";
+	
+    askQuestion(question1);
+    askQuestion(question2);
+    askQuestion(question3);
+    askQuestion(question4);
+    thanks();
+  </script>
+</body>
+</html>

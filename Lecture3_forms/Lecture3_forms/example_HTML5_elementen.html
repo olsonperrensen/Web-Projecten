@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML5 forms</title>
+  <script type="text/javascript">
+    function sum()
+    {   
+      number1=document.getElementById("number1").value;
+      number2=document.getElementById("number2").value;
+      document.getElementById("result").value
+                  =Number(number1)+Number(number2);
+    }
+  </script>
+</head>
+ 
+<body>
+<form action="mailto:james.jones@student.thomasmore.be" method="post" enctype="text/plain">
+
+  <p>
+    Webpagina: 
+    <input type="url" list="url_list" name="link" />
+    <datalist id="url_list">
+      <option value="http://www.w3schools.com">W3Schools</option>
+      <option value="http://www.google.com">Google</option>
+      <option value="http://www.microsoft.com">Microsoft</option> 
+    </datalist>
+  </p>
+  <p>
+    <input type="number" id="number1" name="number1" onkeyup="sum()"/> +
+    <input type="number" id="number2" name="number2" onkeyup="sum()"/> =
+    <output name="result" id="result"></output>
+  </p>
+  <p>
+    <input type="submit" value="send" />
+  </p>
+</form>
+</body>
+</html>

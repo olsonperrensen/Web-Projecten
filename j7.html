@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+      deserunt rerum quidem autem debitis, amet explicabo nam minus, vel fugiat
+      necessitatibus magnam accusantium! Officiis voluptatibus doloribus quis
+      magni commodi nihil!
+    </p>
+    <button>click me</button>
+    <script>
+      $(function () {
+        $('button').dblclick(function () {
+          $(this).animate({
+        'left':'670px',
+        'border':'12px groove pink',
+        'padding':'93px'
+    }, "slow");
+    $(this).css({'color': 'green', 
+        'background-color': 'black',
+        'position':'absolute'})
+    $(this).text(`You didn't expect ` + "${this}" + `to happen!`)    
+    });
+      });
+    </script>
+    
+  </body>
+</html>

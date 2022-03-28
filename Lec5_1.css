@@ -1,0 +1,181 @@
+body
+{
+    font-family: Arial;
+}
+h1 {
+    display: block;
+    font-size: 175%;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+  h2 {
+    display: block;
+    font-size: 150%;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  h3 {
+    display: block;
+    font-size: 125%em;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  p {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+.wrapper
+{
+    min-width: 500px;
+    max-width: 1200px;
+    margin: 1px auto 0px auto;
+    background-image: url(/Lecture5_pageLayout/Lecture5_pageLayout/img/background-tile.png);
+}
+.logo
+{
+    width: 150px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+.titel
+{
+    font-size: 40px;
+    text-shadow: black 7px 7px 10px;
+    text-align:  center;
+    padding: 20px 0px;
+}
+header
+{
+    padding: 10px;
+}
+header::after
+{
+content: "";
+display: block;
+clear: both;
+}
+nav
+{
+    background-color: #333;
+}
+nav ul::after
+{
+content: "";
+display: block;
+clear: both;
+}
+nav li
+{
+    float: left;
+    border-right: 1px solid black;
+    width: 150px; /* If set to auto, 3.1 and 3.2
+    will have trouble adapting to 'auto'*/
+}
+
+nav>ul>li:last-child
+{
+    border-right: none;
+    float: right;
+    width: auto;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    display: block;
+}
+nav a:hover:not(#Aactive)
+{
+    background-color: white;
+    color: black;
+}
+#Aactive
+{
+    background-color: #ec4b2f;
+}
+nav li ul
+{
+    position: absolute;
+    width: 150px;
+    display: none;
+}
+nav li li
+{
+    background-color: #333;
+    border-right: none;
+}
+nav li:hover ul
+{
+    display: block;
+}
+.leftcolumn
+{
+float: left;
+width: 70%;
+}
+.rightcolumn
+{
+float: left;
+width: 25%;
+margin-left: 5%;
+}
+.row::after
+{
+    content: "";
+    display: none;
+    clear: both;
+}
+
+.card
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 9% 0% 9% 2%;
+    width: 100%;
+}
+
+.reallarge
+{
+    transform: scale(0.6);
+    position: relative;
+    right: 192px;
+}
+
+.fakelarge
+{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.fakesmall
+{
+height: 80px;
+padding: 2%;
+margin: 0px 22px;
+}
+
+footer
+{
+    text-align: center; 
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #333;
+}

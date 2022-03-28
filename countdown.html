@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var time; 
+      var counter = 10;
+      function howOften() {
+        time = setInterval(howMuch, 1000);
+      }
+      function howMuch() {
+          if (counter === 10)
+          {
+        document.write(`<hr><h3>${counter}</h3><hr>`)
+          }
+          if (counter)
+          {
+            counter--;
+        }
+        if (counter == 0) {
+          alert(`Your counter is at ${counter}`);
+          clearInterval(time);
+        }
+        document.write(`<hr><h3>${counter}</h3><hr>`)
+        
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="theB" onclick="howOften()">Click Me for the countdown!</button>
+    <p id="theP"></p>
+  </body>
+</html>

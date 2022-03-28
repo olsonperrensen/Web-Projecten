@@ -1,0 +1,30 @@
+.header{
+	background-color:#66FF66;
+}
+
+.header li{
+	display:inline;
+}
+
+h1{
+	color:red;
+}
+
+h2{
+	color:#F90
+}
+
+.footer{
+	background-color:#333399;
+	height:150px;
+}
+
+.menu{
+	background-color:#006600;
+	width: 200px;
+	float:right;
+}
+
+.menu ul{
+	list-style:none;
+}

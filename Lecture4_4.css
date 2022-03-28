@@ -1,0 +1,74 @@
+form
+{
+    border: solid 1px orangered;
+    width: 600px;
+    background-color: beige;
+}
+legend
+{
+    color: white;
+    background-color: brown;
+    padding: 8px;
+}
+fieldset
+{
+    border: solid 3px brown;
+    margin: 20px 17px 20px 17px;
+    padding: 10px;
+    width: 500px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 8px;
+    margin-right: 0;
+    font-weight: bold;
+    color: brown;  
+}
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 8px;
+    margin-right: 0;
+    font-weight: bold;
+    color: brown;
+}
+
+input
+  {
+      margin: 9px;
+      display: inline-block;
+  }
+  textarea
+  {
+      margin: 20px 10px 20px 10px;
+  }
+  label
+  {
+      float: left;
+  }
+  .radiobutton
+  {
+      position: relative;
+      left: 150px;
+  }
+  .textlabel
+  {
+      width: 200px;
+      text-align: left;
+      float: left;
+  }
+  .textfield
+{
+width: 250px;
+border: 2px inset;
+}
+
+.sent
+{
+    margin: 15px;
+}

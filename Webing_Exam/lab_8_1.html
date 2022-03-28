@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lab_8_1.css" />
+    <title>Document</title>
+    <script>
+      //   let usrname;
+      //   function initialize() {
+      //     let mybutton = document.getElementById(`thebutton`);
+      //     mybutton.addEventListener(`click`, theClickfn);
+      //     usrname = prompt(`What is your name?`);
+      //     confirm(`Welcome back, ${usrname}!`)
+      //   }
+      //   function theClickfn() {
+      //     alert(`${this}`);
+      //   }
+    </script>
+    <script>
+      let imgs, brown, pink, blue;
+      function changecolor(COLOR) {
+        imgs = document.getElementsByTagName('img');
+        for (let l in imgs) {
+          imgs[l].src = `startFiles/images/${COLOR}.jpg`;
+        }
+      }
+      function divCol(COL){
+        imgs = document.getElementById('img');
+        // pink = document.getElementsByClassName(`pink`);
+        // blue = document.getElementsByClassName(`blue`);
+        // brown = document.getElementsByClassName(`brown`);
+        imgs.src = `startFiles/images/${COL}.jpg`;
+      }
+    </script>
+  </head>
+  <body>
+    <div><p>Pick a color</p></div>
+    <div class="container">
+      <img id="img" src="/startFiles/images/green.jpg" alt="" />
+      <!-- <img src="/startFiles/images/green.jpg" alt="" /> -->
+    </div>
+    <div class="container2">
+      <div onmouseover="divCol('pink')" class="pink">
+        <span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sed
+          tempore eligendi quidem, reprehenderit vel consectetur ea dolores
+          laboriosam, recusandae quisquam nesciunt ipsum corrupti fuga pariatur
+          dicta commodi modi delectus.
+        </span>
+      </div>
+      <div onmouseover="divCol(`blue`)" class="blue">
+        <span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sed
+          tempore eligendi quidem, reprehenderit vel consectetur ea dolores
+          laboriosam, recusandae quisquam nesciunt ipsum corrupti fuga pariatur
+          dicta commodi modi delectus.
+        </span>
+      </div>
+      <div onmouseover="divCol(`brown`)" class="brown">
+        <span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sed
+          tempore eligendi quidem, reprehenderit vel consectetur ea dolores
+          laboriosam, recusandae quisquam nesciunt ipsum corrupti fuga pariatur
+          dicta commodi modi delectus.
+        </span>
+      </div>
+    </div>
+    <button onclick="changecolor('yellow')">yellow</button>
+    <button onclick="changecolor('blue')">blue</button>
+    <button onclick="changecolor('brown')">brown</button>
+    <button onclick="changecolor('gray')">gray</button>
+    <button onclick="changecolor('pink')">pink</button>
+    <button onclick="changecolor('purple')">purple</button>
+  </body>
+</html>

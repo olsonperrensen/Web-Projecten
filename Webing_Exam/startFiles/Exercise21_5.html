@@ -1,0 +1,89 @@
+<!doctype html> 
+<html> 
+<head> 
+  <meta charset="utf-8" /> 
+  <title>Ordering form exercise 21.5</title>
+  <link href="Style_Exercise21_5.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h2>An ordering form</h2>
+  <form id="form1" action="mailto:student@student.lessius.eu" method="post" enctype="text/plain">
+    <div class="row">
+		<div class="col-3">
+		  <p><label for="name">Your name:</label></p>
+		  <p><input type="text" name="name" id="name" /></p>
+		</div>
+		<div class="col-3">
+		  <p><label for="email">Email</label></p>
+		  <p><input type="text" name="email" id="email" /></p>
+		</div>
+		<div class="col-3">
+		  <p><label for="phone">Phone</label></p>
+		  <p><input type="text" name="phone" id="phone" /></p>
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-2">
+		  <p><label for="delivery">Delivery address</label></p>
+		  <textarea name="delivery" id="delivery">Delivery address</textarea>
+		</div>
+		<div class="col-2">
+		  <p><label for="invoice">Invoice address</label></p>
+		  <textarea name="invoice" id="invoice">Invoice address</textarea>
+		</div>
+	  </div>
+	  <p><input type="checkbox" name="ditto" id="ditto"/>
+			 Invoice address and delivery address are equal</p>
+	  <hr />
+    
+    <!-- Table with articles -->
+    <table>
+      <tr>
+        <th>Article</th>
+        <th>Price</th>
+        <th>Number</th>
+        <th>Amount</th>
+      </tr>
+      <!-- First article -->
+      <tr>
+        <td>Toner for Laser printer </td>
+        <td>&euro; 150,-</td>
+        <td><input type="text" name="number1" id="number1" size="5" value="0" /></td>
+        <td><input type="text" name="amount1" id="amount1" class="amount" size="8" value="0"/></td>
+      </tr>
+      <!-- Second article -->
+      <tr>
+        <td>DVD Rewritable</td>
+        <td>&euro; 25,- </td>
+        <td><input type="text" name="number2" id="number2" size="5" value="0" /></td>
+        <td><input type="text" name="amount2" id="amount2" class="amount" size="8" value="0"/></td>
+      </tr>
+      <!-- Third article -->
+      <tr>
+        <td>256 MB memory </td>
+        <td>&euro; 98,-</td>
+        <td><input type="text" name="number3" id="number3" size="5" value="0" /></td>
+        <td><input type="text" name="amount3" id="amount3" class="amount" size="8" value="0" /></td>
+      </tr>
+      <!-- Fourth article -->
+      <tr>
+        <td>Harddisk, 120 GB. </td>
+        <td>&euro; 279,-</td>
+        <td><input type="text" name="number4" id="number4" size="5" value="0" /></td>
+        <td><input type="text" name="amount4" id="amount4" class="amount" size="8" value="0" /></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right"><b>Total price: &euro; </b></td>
+        <td><input type="text" name="totalPrice" id="totalPrice" size="8" value="0" /></td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+        <input type="submit" name="order" id="order" value="order" />
+        <input type="reset" name="erase" id="erase" value="erase" />
+    </p>
+  </form>
+</body>
+</html>

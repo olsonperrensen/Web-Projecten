@@ -1,0 +1,10 @@
+div.twitter
+{
+    display: inline;
+    border: solid 2px blue;
+    margin: 8px;
+    float: left;
+    text-align: center;
+    padding: 7px;
+    width: 200px;
+}

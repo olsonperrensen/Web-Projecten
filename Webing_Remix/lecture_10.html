@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let counter = 0;
+      function EXECUTE() {
+        counter++;
+        if (counter % 2 == 1) {
+          document.getElementById(`DIVDIV`).style.display = `block`;
+        } else {
+          document.getElementById(`DIVDIV`).style.display = `none`;
+        }
+      }
+    </script>
+    <style>
+      #DIVDIV {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" onclick="EXECUTE()">Toggle help</a>
+    <div id="DIVDIV">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        recusandae maiores quia vero, necessitatibus nobis saepe quo fugiat
+        sint? Impedit maxime commodi vitae sit molestiae, autem natus nostrum
+        perspiciatis ratione!
+      </p>
+    </div>
+  </body>
+</html>

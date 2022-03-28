@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+  </head>
+  <style>
+    img {
+      display: block;
+      height: 400px;
+      width: 400px;
+    }
+main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+b
+{background-color: black;
+font-weight: bolder;
+padding: 6px;
+color: palevioletred;
+}
+
+.surprise
+{
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: monospace;
+  padding: 6px;
+}
+  </style>
+  <body>
+    <main>
+    <img src="/placeholder.png" alt="" />
+    <button id="next">Start the slideshow</button>
+    <p id="hid"></p>
+    <label for="bg">background changer!</label>
+    <input id="bg" type="text" name="" id="" />
+  </main>
+  </body>
+  <script src="jquery-3.6.0.js"></script>
+  <script>
+    let counter;
+    let images = [
+      '/alien.jpg',
+      '/result.jpg',
+      '/bodywp2.jpg',
+      '/rainbow.jpg',
+      '/rhombus.jpg',
+      '/JLS-CCS.JPG',
+      '/background.jpg',
+    ];
+
+    $(function () {
+      counter = 0;
+      $('#next').click(function () {
+        let shared = $('img').fadeOut('slow', function () {
+          shared.attr('src', images[counter]);
+
+          switch (counter) {
+            case 0:
+              $('#hid').html('<b>An alien</b>');
+              counter++;
+              break;
+            case 1:
+              $('#hid').html('<b>A construction site</b>');
+              counter++;
+              break;
+            case 2:
+              $('#hid').html('<b>A wallpaper</b>');
+              counter++;
+              break;
+            case 3:
+              $('#hid').html('<b>A volcano</b>');
+              counter++;
+              break;
+            case 4:
+              $('#hid').html('<b>A pixelated rhombus</b>');
+              counter++;
+              break;
+            case 5:
+              $('#hid').html('<b>A colorful collage</b>');
+              counter++;
+              break;
+            case 6:
+              $('#hid').html('<b>A bike and a house</b>');
+              counter++;
+              break;
+            default:
+              $('#hid').html(
+                '<b class="surprise">bEeP BoOp bOp! I detected you liked my slide, taking you to the beginning again in 3..2..1..<b>'
+              );
+              counter = 0;
+              break;
+          }
+          shared.fadeIn();
+        });
+      });
+      $('#hid').css('color', 'brown');
+      $('input').on('keypress', function (e) {
+        if (e.which == 13) {
+          $('body').css('background-color', $('input').val());
+            $('label').html(`Color changed!`);
+        }
+      });
+    });
+    // if (counter === 0) {
+    //   shared.attr('src', '/result.jpg');
+    // } else if (counter === 1) {
+    //   shared.attr('src', '/bodywp2.jpg');
+    // } else if (counter === 2) {
+    //   shared.attr('src', '/rainbow.jpg');
+    // } else if (counter === 3) {
+    //   shared.attr('src', '/rhombus.jpg');
+    // } else if (counter === 4) {
+    //   shared.attr('src', '/JLS-CCS.JPG');
+    // } else if (counter === 5) {
+    //   shared.attr('src', '/background.jpg');
+    //   counter = 0;
+    // }
+    // counter++;
+  </script>
+</html>

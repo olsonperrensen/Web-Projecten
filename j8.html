@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="JLS-CCS.JPG" />
+    <p id="start">Click me to start the animation</p>
+    <p class="myp">Welcome!</p>
+    <style>
+      .myp {
+        color: blue;
+        font-size: 0.3rem;
+        visibility: visible;
+      }
+      img {
+        width: 2%;
+        height: 20%;
+      }
+    </style>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#start').click(function () {
+          $(this).hide('slow', function () {
+            $('img').css({
+   'height' : '600px',
+   'width' : '300px'
+})
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

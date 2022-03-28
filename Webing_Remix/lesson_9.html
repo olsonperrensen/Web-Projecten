@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //let popupprops = `height=200,width=200,top=200,left=200`;
+      //window.open(`http://thomasmore.be`, `TM`, popupprops);
+      //   let newVindov = window.open(
+      //     `popup.html`,
+      //     `Pop-Up!`,
+      //     `height=200,width=400,top=200,left=200`
+      //   );
+      //   newVindov.document.write(`<h1>Hello world</h1>`);
+      //   newVindov.close();
+      let v = window.open(
+        `popup.html`,
+        `The Pop-up!`,
+        `height=200,width=400,top=200,left=200`
+      );
+      let date = new Date();
+      v.document.write(
+        `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+      );
+    </script>
+  </head>
+  <body>
+    <div><p>here is nothing...</p></div>
+  </body>
+</html>

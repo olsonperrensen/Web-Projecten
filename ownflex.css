@@ -1,0 +1,95 @@
+.wrapper
+{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.logo
+{
+    float: left;
+    height: 74px;
+    margin: 9px;
+    border: dashed 4px magenta;
+}
+
+span
+{
+    border: dashed 4px purple;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;    
+}
+
+header
+{
+    background-color: bisque;
+}
+header::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav
+{
+    background-color: khaki;
+}
+li
+{
+    display: inline-block;
+    margin: 9px 99px;
+    font-weight: bold;
+    font-variant-caps: petite-caps;
+    font-size: 2.1rem;
+}
+a
+{
+    text-decoration: none;
+}
+main
+{
+    background-color: lightsalmon;
+}
+section
+{
+    width: 4%;
+    flex-direction: column-reverse;
+    display: flex;
+    padding: 33px;
+    margin: 2px;
+}
+section:nth-child(odd)
+{
+    background-color: antiquewhite;
+}
+section:nth-child(even)
+{
+    background-color: blueviolet;
+}
+.mastersection
+{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+p
+{
+    font-size: 2rem;
+}
+footer
+{
+    background-color: mediumslateblue;
+}
+header, nav, main, footer, a, section
+{
+    border: solid 1px indianred;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}

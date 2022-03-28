@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Shared_Page.css" />
+    <link rel="stylesheet" href="Polaris_ABOUT_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script defer src="ghost-typer.js"></script>
+    <script src="Polaris_ABOUT_Page.js"></script>
+    <script>
+      $(function () {
+        $('#ghost').ghosttyper({
+          messages: ['Polaris', 'Discover', 'Let it discover you.'],
+          timeWrite: 210,
+          timeDelete: 120,
+          timePause: 1000,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome_Page.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_About_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li class="project2">
+            <a href="Polaris_CV_Page.html">Curriculum Vitae</a>
+            <ul class="hidd2">
+              <li class="user1">
+                <a href="Polaris_CV_Page.html"><p>Max</p></a>
+              </li>
+              <li class="user1">
+                <a href="Polaris_CV_Page_2.html"><p>Caro</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li>
+            <a href="Polaris_Demonstration_Page.html">Live! Demonstration</a>
+          </li>
+          <li>
+            <a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Search_Page.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn id="ghost"></dfn>
+        </div>
+        <div class="maintext">
+          <strong><a href="#PLAY" onclick="myFn()">PLAY</a></strong>
+          <hr />
+          <strong><a href="#VIEW" onclick="myFn2()">VIEW</a></strong>
+          <hr />
+          <strong><a href="#SHARE" onclick="myFn3()">SHARE</a></strong>
+        </div>
+        <div class="polaris_container" id="PLAY">
+          <p class="p1">
+            SHOW US YOUR TASTE Are you prone to punk? mainstream rock? or maybe
+            a deliberate fan of Frederic Chopin. In the end, it doesn't even
+            matter. As long as you have, through legal means, adquired an audio
+            file copy of your desired song, it is all good. Polaris will do the
+            rest. If you hesitate whether your file is supported or,
+            unfortunately enough, not supported, you should better check the
+            Frequently Asked Questions for further information on the topic. Or
+            you can go right away by clicking the last available button on this
+            webpage.
+          </p>
+          <img class="polaris_alpha" src="Polaris_About_GIF_1.gif" alt="" />
+        </div>
+        <div class="polaris_container" id="VIEW">
+          <p class="p2">
+            EXPRESS YOURSELF We all love when the party you are in gets more and
+            more interesting. With Polaris, the same thing happens. It gets
+            better with time. We may have as well dedicate ourselves to
+            cultivating wine. Back to the features, there are currently four
+            supported ways of seeing what you are hearing. That sounds amazing,
+            doesn't it? You can see which of the visualizers suits best your
+            so-well-developed taste. If you put a heavy song, either you will
+            like your CPU working at a more intense rate or you would like to
+            see a complete round-up of all frequencies being represented in
+            different shapes, colors, sizes and lengths. Just a tip, you can
+            actually try this out by downloading something called a "full-sweep"
+            or frequency sweeping. This will give you the idea what happens when
+            all bands are active. But please don't blast it over your speakers,
+            such files can be amplitude inducing and may cause harm at high
+            volume rates.
+          </p>
+          <img class="polaris_beta" src="Polaris_About_GIF_2.gif" alt="" />
+        </div>
+        <div class="polaris_container" id="SHARE">
+          <p class="p3">
+            ENJOY THE MOMENT Once the show is over... it is not really over!
+            You can keep the end result of how your song looked like with
+            our brand-new, flagship, latest, most aclaimed visualizer of the
+            spectrum (no pun intended), the last one. Simply right click it
+            once the song is over so you can either see it fullscreen on a new
+            web browser tab, and if you like it, save it along with other files
+            you may have in your drive. You can set the end result as your
+            default wallpaper the moment you log in. Or you can paint it as 
+            a work of art, it is up to you! Talking about enjoying the moment, 
+            your privacy is also safe with us. You can stay in our site for
+            whenever you needed and we will not be tracking you, since we don't use cookies.
+          </p>
+          <img class="polaris_delta" src="Polaris_About_GIF_3.gif" alt="" />
+        </div>
+        <div class="container">
+          <form action="Polaris_Demonstration_Page.html">
+            <button id="thebutton">Try it now</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Shared_Page.css" />
+    <link rel="stylesheet" href="Polaris_Demonstration_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script defer src="ghost-typer.js"></script>
+    <script>
+      $(function () {
+        $('#ghost').ghosttyper({
+          messages: [
+            'Polaris',
+            'Goes',
+            'Live!',
+            'Demonstration',
+            '200 OK',
+            'Did you like it?',
+            'Well',
+            'I have a surprise for you',
+            'A legacy version',
+            'You will not be able',
+            'To play your files',
+            'But something else',
+            'Will happen...',
+            'Click on the last button',
+          ],
+          timeWrite: 210,
+          timeDelete: 120,
+          timePause: 1000,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+        <script src="jquery-3.6.0.js"></script>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome_Page.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_About_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_CV_Page.html">Curriculum Vitae</a></li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li>
+            <a href="Polaris_Demonstration_Page.html">Live! Demonstration</a>
+          </li>
+          <li>
+            <a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Search_Page.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn id="ghost"></dfn>
+        </div>
+        <div onclick="myfunction()">
+          <iframe
+            class="iframe"
+            src="Polaris_Main_Page.html"
+            allowfullscreen
+          ></iframe
+          ><!-- popup is also an option-->
+        </div>
+        <div class="container">
+          <form action="Polaris_Legacy_Page.html">
+            <button id="thebutton">Try the legacy version</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+    <script>
+      function myfunction() {
+        var test = 'test';
+        console.log(test);
+        $('.iframe').css('height', window.innerHeight);
+        $('.iframe').css('width', window.innerWidth() + `px`);
+      }
+    </script>
+  </body>
+</html>

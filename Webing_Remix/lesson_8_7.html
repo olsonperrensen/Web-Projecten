@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function initialize() {
+        let x = document.getElementById(`x`);
+        x.addEventListener(`keypress`, keyDetecctor, false);
+      }
+      function keyDetecctor() {
+        let e = window.event;
+        let _code;
+
+        if (e.keyCode) {
+          alert(`keycode exists`);
+          _code = e.keyCode;
+        }
+
+        // IE compatibility
+        else if (e.which) {
+          alert(`which exists`);
+          _code = e.which;
+        }
+        let _keyYouPressed = String.fromCharCode(_code);
+        alert(`${_keyYouPressed} was the key you pressed`);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <h2>Key detect</h2>
+    <input id="x" type="text" name="" id="" />
+  </body>
+</html>

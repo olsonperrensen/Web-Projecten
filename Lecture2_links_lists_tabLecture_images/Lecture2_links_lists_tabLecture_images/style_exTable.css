@@ -1,0 +1,23 @@
+table{
+    font-family: arial, Veradan, Sans-serif;
+    background-color:#00FF00;
+    border:2px solid #000000;
+    border-collapse:collapse;  
+    margin-left:auto;
+    margin-right:auto;
+    width:450px;
+    caption-side:bottom
+}
+
+td{
+    border:1px solid #000000;
+    padding:10px 5px
+}
+
+td.red{
+    background-color:#FF0000
+}
+
+td.large{
+  width:50%
+}

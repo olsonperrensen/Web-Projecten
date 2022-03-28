@@ -1,0 +1,21 @@
+h1{
+  text-align:center;
+}
+ul{
+  font-family:Verdana, Arial, Sans-serif;
+  margin:0;
+  padding:0;
+  list-style-type:none
+}
+li{
+  display:inline
+}
+a{
+  padding: 0.2em 1em 0.2em 1em;
+  background-color:#00A47B;
+  color:#FFFFFF
+}
+a:hover{
+  background-color:#005D1F;
+  color:#FFFFFF
+}

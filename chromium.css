@@ -1,0 +1,111 @@
+.wrapper
+{max-width: 900px;
+margin: 0px auto;
+}
+
+.uppsala
+{
+    filter: invert(1);
+    width: 13%;
+    margin: 0px auto;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 3em;
+    margin-bottom: 1.37em;
+    margin-left: 260px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+  }
+  .image1
+  {
+    float: left;
+    width: 11%;
+    margin: 15px;
+  }
+
+  .image2
+  {
+      float: left;
+      width: 27%;
+      margin-right: 9px;
+}
+.p
+{
+    text-align: justify;
+    font-family: monospace;
+    color: white;
+    padding: 8px;
+}
+header, nav, main, footer
+{
+    background-color: crimson;
+border: solid 0.5em pink;
+}
+
+header::after, nav::after, main::after, footer::after
+{
+content: "";
+display: block;
+clear: both;
+}
+
+footer
+{text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 1.8em;
+    padding: 12px;
+}
+
+ul
+{
+    font-family: monospace;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+li
+{
+    display: inline-block;
+    margin: 15px;
+}
+.aboutus
+{
+    display: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+li:hover ul
+{
+    display: inline-block;
+}
+
+ul li ul
+{
+    position: absolute;
+    left: 45%;
+}
+* {
+    box-sizing: border-box;
+  }
+ .leftside
+ {
+     width: 70%;
+     float: left;
+     transform: rotateX(180deg);
+ }
+ .rightside
+ {
+     float: left;
+     width: 30%;
+     transform: skew(12deg, 9deg);
+ }

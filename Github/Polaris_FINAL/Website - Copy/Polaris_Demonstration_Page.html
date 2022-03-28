@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Shared_Page.css" />
+    <link rel="stylesheet" href="Polaris_Demonstration_Page.css" />
+    <link rel="stylesheet" href="tracking_iframe_style.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script defer src="ghost-typer.js"></script>
+    <script>
+      $(function () {
+        $('#ghost').ghosttyper({
+          messages: [
+            'Polaris',
+            'Goes',
+            'Live!',
+            'Demonstration',
+            '200 OK',
+            'Did you like it?',
+            'Well',
+            'I have a surprise for you',
+            'A legacy version',
+            'You will not be able',
+            'To play your files',
+            'But something else',
+            'Will happen...',
+            'Click on the last button',
+          ],
+          timeWrite: 210,
+          timeDelete: 120,
+          timePause: 1000,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+        <script src="jquery-3.6.0.js"></script>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome_Page.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_About_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_CV_Page.html">Curriculum Vitae</a></li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li>
+            <a href="Polaris_Demonstration_Page.html">Live! Demonstration</a>
+          </li>
+          <li>
+            <a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Search_Page.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="btn-group">
+          <figure class="clock">
+            <div class="clock_ciphers">
+              <div class="mins">00</div>
+              <div class="mins">:</div>
+              <div class="secs">00</div>
+            </div>
+            <audio
+              src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+            ></audio>
+            <svg class="progress-ring" height="120" width="120">
+              <circle
+                class="progress-ring__circle"
+                stroke-width="8"
+                fill="transparent"
+                r="50"
+                cx="60"
+                cy="60"
+              />
+            </svg>
+          </figure>
+          <hr />
+          <button class="start">start focus</button>
+          <button class="reset">reset</button>
+          <button class="pause">pause</button>
+          <form action=".">
+            <label for="focusTime">Song seconds</label>
+            <input
+              onmouseover="start_iframe_timer()"
+              type="number"
+              value="0"
+              id="focusTime"
+            />
+            <label for="breakTime">Break Time</label>
+            <input type="number" value="0" id="breakTime" />
+            <label for="currentsong">Current song</label>
+            <input type="text" name="task" id="currentsong" />
+            <label for="nextsong">Next Song</label>
+            <input type="text" name="task" id="nextsong" />
+            <button type="reset">Reset</button>
+            <button type="submit">Save settings</button>
+          </form>
+        </div>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn id="ghost"></dfn>
+        </div>
+        <div>
+          <span> 1. Upload your song on 1st 'Choose File'</span>
+          <hr />
+          <span> 2. Save settings </span>
+          <hr />
+          <span> 3. Upload your song on 2nd 'Choose File'</span>
+          <hr />
+          <span>4. Song plays</span>
+          <hr />
+          <span>5. Click 'Start Focus'</span>
+          <hr />
+          <span> 6. Experiment! Hover Song seconds for reset </span>
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+          <input
+            type="file"
+            id="fileupload"
+            accept="audio/*"
+            title="Please upload your song here..."
+          />
+          <audio id="audio1" onloadedmetadata="start_iframe_timer()" controls>
+            <source src="." id="thesource" />
+          </audio>
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+        </div>
+        <div>
+          <iframe
+            class="iframe"
+            src="Polaris_Main_Page.html"
+            allowfullscreen
+          ></iframe
+          ><!-- popup is also an option-->
+        </div>
+        <div class="container">
+          <form action="Polaris_Legacy_Page.html">
+            <button id="thebutton">Try the legacy version</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+    <script>
+      // function myfunction() {
+      //   var test = 'test';
+      //   console.log(test);
+      //   $('.iframe').css('height', window.innerHeight);
+      //   $('.iframe').css('width', window.innerWidth() + `px`);
+      // }
+    </script>
+    <script src="tracking_iframe_main_script.js"></script>
+    <script src="tracking_iframe_time.js"></script>
+    <script src="tracking_iframe_function.js"></script>
+    <script src="shape_duration.js"></script>
+    <script>
+      // $(document).ready(function () {
+      //   var start = new Date();
+
+      //   $(window).unload(function () {
+      //     var end = new Date();
+      //     $.ajax({
+      //       url: 'timespent.php',
+      //       data: { timeSpent: end - start },
+      //       async: false,
+      //     });
+      //   });
+      // });
+    </script>
+  </body>
+</html>

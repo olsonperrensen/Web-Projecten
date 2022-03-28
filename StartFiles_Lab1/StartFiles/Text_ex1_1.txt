@@ -1,0 +1,10 @@
+This is a centered heading of level 1.
+This is an ordinary paragraph. The text is therefore placed against the left margin. If the dimensions of the browser window are changed, the text will adjust itself automatically. 
+This text will be aligned against the right margin. It reads less pleasant, a reason why this type of alignment is not used very often. 
+
+A simple recipe:
+Take an egg. 
+Break it over a glass. 
+Carefully split the egg white and yolk.   
+Beat the egg whites with the mixer.   
+Save the yolk for later.

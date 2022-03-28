@@ -1,0 +1,16 @@
+body{
+  font-family:Arial
+}
+
+.logo p{
+  font-size:40px;
+  text-shadow: black 7px 7px 10px
+}
+
+section h2{
+  text-shadow: black 2px 2px 3px
+}
+
+footer{
+  font-family: "courier-new"
+}

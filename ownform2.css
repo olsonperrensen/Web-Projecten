@@ -1,0 +1,22 @@
+label
+{
+    border: dashed 3px lightsalmon;
+    float: right;
+    width: 140px;
+    text-align: left;
+    margin-right: 444px;
+}
+input
+{
+    border: dashed 3px lightseagreen;
+    width: 20%;
+}
+p
+{
+    background-color: lightyellow;
+}
+/*Added to fix reset.css*/
+p
+{
+margin-top: 12px;
+}

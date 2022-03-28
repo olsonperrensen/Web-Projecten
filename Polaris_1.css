@@ -1,0 +1,358 @@
+html
+{max-width: 1920px;
+max-height: 1080px;
+}
+
+body
+{
+    background-image: url('bodywp2.svg');
+    background-size: 331%;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 2px;
+}
+
+.logo
+{
+    width: 112px;
+}
+
+.logo:hover
+{
+    filter: invert(5); 
+    transition-delay:1s; /* transition-delay attribute taken from 
+    https://stackoverflow.com/questions/8566090/how-can-i-delay-a-hover-effect-in-css */
+}
+
+.totheright
+{
+
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 222%;
+    text-align: end;
+}
+
+.footer::before
+{
+    content: "";
+    clear: both;
+    display: block;
+    background-color: orchid;
+    border: solid 2px white;
+}
+
+.footer
+{
+    clear: both;
+    position: relative;
+    margin-top: 91%;
+    text-align: center;
+    padding: 0.1%;
+}
+
+.nav
+{
+    float: left;
+    border: dashed 3px orange;
+    margin: 29px 45px;
+    list-style-position: inside;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    position: relative;
+    left: 339px;
+}
+
+.desc::before
+{
+    content: "";
+    display: none;
+    clear: both;
+}
+
+.desc
+{
+    position: relative;
+    left: -89px;
+    list-style-type: square;
+}
+
+.SP
+{
+position: absolute;
+left: 0px;
+display: none;
+font-variant-caps: petite-caps;
+top: 46px;
+width: 86%;
+border: dashed 6px coral;
+
+}
+
+.SSP:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.MP:hover .SP {
+    display:block;
+}
+
+
+.p4
+{
+    width: 690px;
+    height: 300px;
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 400px;
+    right: 200px;
+}
+.vid
+{
+width: 640px;
+border: 32px solid transparent;
+border-image: url('alien.svg');
+border-image-slice: 25;
+border-image-repeat:repeat;
+}
+
+.header
+{
+border-bottom: solid 0.1px white;
+}
+
+.VHeader
+{
+    font-size: 4rem;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 145%;
+}
+
+.nav:hover
+{
+    background-color: brown;
+    border: solid 3px thistle;
+}
+
+p
+{
+    clear: both;
+}
+
+.panflet1:not(.p4)
+{
+    border: solid 11px tan;
+    border-radius: 23%;
+    display: flex;
+    position: relative;    
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+.knie
+{
+    filter: invert(1); /* filter attribute 
+    taken from https://blog.union.io/code/2017/08/10/img-svg-fill/ */
+    width: 12%;
+    transform: skewX(49deg);
+}
+
+
+li
+{
+    padding: 14px;  
+}
+
+ul
+{
+    position: relative;
+    right: 170px;
+}
+
+.af1
+{
+    position: relative;
+    right: 300px;
+    top: 220px;
+}
+
+.magicspan:hover
+{
+    color: black;
+    background-color: coral;
+}
+
+.magicspan::before
+{
+    content: "";
+    display: none;
+    clear: both;
+
+}
+.magicspan
+{
+    position: relative;
+    top: 19px;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+.p1
+{
+    left: 2%;
+    width: 610px;
+    display: inline;
+}
+.p2
+{
+    font-family: monospace;
+    float: left;
+    width: 73%;
+    transform: skew(168deg,2deg);
+    display: flex;
+    position: relative;
+    left: 177px;
+    bottom: 112px;
+    padding: 26px;
+    text-overflow: ellipsis;
+    margin: 0px;
+    box-shadow: 12px 12px blueviolet;
+}
+
+span
+{
+    font-variant-caps: titling-caps;
+}
+h2
+{
+    font-variant-caps: petite-caps;
+    top: -199px;
+    width: 9%;
+    padding: 3px;
+    color: beige;
+    border: dashed 6px coral;
+    position: relative;
+    left: 655px;
+}
+
+h2:hover
+{
+    background-color: white;
+    color: black;
+    transform: scale(-1, 1);
+    transition-delay: 2s;
+}
+
+.p3
+{
+padding: 32px;
+float: left;
+display: flex;
+position: relative;
+top:-42px;
+margin-bottom: 73px;
+text-align: justify;
+}
+.p3::after
+{
+    content: "";
+    display: none;
+    clear: both;
+}
+.p4
+{
+position: relative;
+right: 120px;
+}
+div
+{
+    clear: both;
+}
+.pan1t
+{
+    padding: 7%;
+}
+
+.lastpar
+{
+    border: solid 11px tan;
+    border-radius: 23%;
+    display: flex;
+    position: relative;    
+    word-wrap: break-word;
+    float: left;
+    height: 300px;
+    text-align: end;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+textarea
+{
+    background-color: transparent;
+    color: white;
+    font-family: monospace;
+    padding: 16px;
+}
+.butter
+{
+    padding: 0%;
+    width: 480px;
+    height: 236px;
+    border: 32px solid transparent;
+    border-image: url('alien.svg');
+    border-image-slice: 25;
+    border-image-repeat:repeat;
+    position: relative;
+    float: left;
+    left: 0px auto;
+}
+
+.grouppic
+{
+    margin-left: 46px;
+    padding: 6px;
+    margin-top: 229px;
+}
+
+.cestpetit
+{
+    width: 480px;
+    display: block;
+    float: left;
+    position: relative;
+    bottom: 99px;
+}
+
+.cestpetit:nth-child(odd) /* nth-child extracted from
+https://www.w3schools.com/cssref/sel_nth-child.asp */
+{
+    box-shadow:6px 6px 20px 3px black;
+}
+
+.moveaub
+{
+    position: relative;
+    left: 40px;
+}
+
+.lpan
+{
+position: relative;
+left: 410px;
+}
+
+#Section6
+{
+    margin: 0px;
+}

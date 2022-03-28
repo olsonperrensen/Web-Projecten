@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let sportS, output, strRes, PLACEHOLDER;
+      function showSelection() {
+        sportS = document.getElementsByName(`sports`);
+        output = document.getElementById(`output`);
+        strRes = `You have selected the following: `;
+
+        for (PLACEHOLDER in sportS) {
+          if (sportS[PLACEHOLDER].checked) {
+            strRes += `\n \n ${sportS[PLACEHOLDER].value} \n \n`;
+          }
+        }
+        output.innerHTML = strRes;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Let's sport!</h2>
+    <form action="#">
+      <p>
+        <input type="checkbox" value="Kayjak" name="sports" id="1" />
+        <label for="1">KayjakING</label>
+        <input type="checkbox" value="Climbing" name="sports" id="2" />
+        <label for="2">ClimbingING</label>
+        <input type="checkbox" value="Hiking" name="sports" id="3" />
+        <label for="3">HikingING</label>
+        <input type="checkbox" value="Snowboarding" name="sports" id="4" />
+        <label for="4">SnowboardingING</label>
+        <input type="checkbox" value="Surfing" name="sports" id="5" />
+        <label for="5">SurfingING</label>
+        <input type="checkbox" value="Swimming" name="sports" id="6" />
+        <label for="6">SwimmingING</label>
+        <input type="checkbox" value="Waterpoloing" name="sports" id="7" />
+        <label for="7">WaterpoloingING</label>
+      </p>
+      <p>
+        <input type="button" value="SHOW_SELECTION" onclick="showSelection()" />
+      </p>
+      <p><textarea name="" id="output" cols="20" rows="10"></textarea></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+.wrapper
+{
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: blue;
+    color: maroon;
+}
+header
+{
+    background-color: teal;
+    border-bottom: solid 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i1
+{
+    float: left;
+    transform: scale(0.2);
+}
+strong
+{
+    margin: 5px;
+    font-size: 3rem;
+}
+
+ul
+{
+    background-color: cadetblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.myLSine, .myAlien
+{
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-self: center;
+    margin: 16px;
+}
+.left
+{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 15%;
+    border-right: solid 1px black;
+    padding: 15px;
+}
+
+.right
+{
+    display: flex;
+    width: 15%;
+    border-left: 1px solid black;
+    padding: 15px;
+}
+
+.right li
+{
+    margin-bottom: 199px;
+    margin-left: 60px;
+}
+
+footer
+{
+    color: white;
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+}
+.center
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: lightsteelblue;
+}
+main
+{
+    display: flex;
+}
+.myForum
+{
+    background-color: gainsboro;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.myTable
+{
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+}
+table
+{
+    border-collapse: separate;
+    border-spacing: 85px;
+}
+form
+{
+    margin-left: 190px;
+}
+
+label, input, textarea, select
+{
+    float: left;
+    width: 55%;
+}

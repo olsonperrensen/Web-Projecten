@@ -1,0 +1,19 @@
+table
+{
+    table-layout: fixed;
+    width: 65%;
+    background-color: beige;
+    border: solid 4px olivedrab;
+    margin: auto;
+    border-spacing: 0px;
+    table-layout: 900px;
+}
+td{
+    border: solid 1px black;
+    text-align: center;
+}
+th{
+    border: solid 1px black;
+    padding: 1%;
+    word-wrap: break-word;
+}

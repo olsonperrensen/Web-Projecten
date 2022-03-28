@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="sofiesaysso1.xsl"?>
+<root>
+<people>
+<name>Kevin</name>
+<lname>Scott</lname>
+<place>Mechelen</place>
+</people>
+<people>
+<name>Jason</name>
+<lname>Morgan</lname>
+<place>Antwerp</place>
+</people>
+<people>
+<name>Helen</name>
+<lname>Clark</lname>
+<place>Brussels</place>
+</people>
+<people>
+<name>Frank</name>
+<lname>Smith</lname>
+<place>Hasselt</place>
+</people>
+</root>

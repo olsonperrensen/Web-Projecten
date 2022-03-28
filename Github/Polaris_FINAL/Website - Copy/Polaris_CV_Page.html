@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Shared_Page.css" />
+    <link rel="stylesheet" href="Polaris_CV_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script defer src="ghost-typer.js"></script>
+    <script>
+      $(function(){
+        $('#ghost').ghosttyper({
+          messages: ['Curriculum', 'Vitae'],
+          timeWrite: 210,
+          timeDelete: 120,
+          timePause: 1000
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome_Page.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_About_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_CV_Page.html">Curriculum Vitae</a></li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li>
+            <a href="Polaris_Demonstration_Page.html">Live! Demonstration</a>
+          </li>
+          <li>
+            <a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Search_Page.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn id="ghost"></dfn>
+        </div>
+        <div class="maintext">
+          <strong>MY STORY</strong>
+          <hr />
+          <div class="sidep">
+            <div class="subsidep">
+              Max Iturria is an independent student, based in Belgium. He
+              considers himself to be a creative technologist. He has been
+              around computers for over since he was ~12 and doing so
+              academically since 2020, when he started his studies in Comptuer
+              Science in Sint-Katelijne-Waver, Flanders region. His interests
+              are focused on full stack web development, extending and designing
+              application infrastructure, maintenance, custom integrations and
+              optimizations.
+            </div>
+            <div class="subsidep">
+              Max has been on exchange in Belgium since 2018 and became part of
+              a Kempen based volunteering group for international student
+              counselling and mutual cultural understanding, along with workshop
+              related programs in 2019. In his spare time, Max likes to test
+              possible combinations of computers and intrinsic human connecting
+              experiences like (but not only tied to) music, psychology...
+            </div>
+
+            <div class="subsidep">
+              His other educational and advocacy efforts include learning
+              languages, spirituality, meditation, philosophy and mathematics.
+              Max grew up in Cordoba, Argentina and right before reaching
+              adulthood he decided to move to Belgium alone. Further topics he
+              considers interesting include pedagogical programming,
+              Neuroscience of religion, Neurotechnology, Neuroethics. He is a
+              student enthousiast that enjoys talking in Spanish, English,
+              Dutch, and his broken French and Italian.
+            </div>
+          </div>
+        </div>
+        <iframe src="CV.pdf#toolbar=0"> </iframe>
+        <div>
+          <div class="sidep">
+            <div class="subsidep" style="text-align: center">
+              <strong class="secondstrong">ADDITIONAL INFORMATION</strong>
+              <hr />
+              <span class="spanex"
+                >Previous projects Max has made include having done research on
+                whether fermentation is a temperature-dependent process in
+                relation to the environment it (yeast) grows, finding out how
+                folk music shape different cultures and their sense of
+                community-belonging, among other projects. Inside the Computer
+                Science world, Max held an Aptoide store providing modified
+                binaries for android that reached up to eight millon downloads.
+                He also did reverse engineering of APKs and EXEs when he was
+                around thirteen, modified integer values using Cheat Engine,
+                tried Wireless Penetration tests, among other projects.
+              </span>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

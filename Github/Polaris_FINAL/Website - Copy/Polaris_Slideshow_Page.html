@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Slideshow_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      let counter;
+      let images = [
+        '0.PNG',
+        '1.PNG',
+        '2.PNG',
+        '3.PNG',
+        '4.PNG',
+        '5.PNG',
+        '6.PNG',
+        '7.PNG',
+        '8.PNG',
+        '9.PNG',
+        '10.PNG',
+        '11.PNG',
+        '12.PNG',
+      ];
+  
+      $(function () {
+        counter = 0;
+        $('#next').click(function () {
+          let shared = $('img').fadeOut('slow', function () {
+            shared.attr('src', images[counter]);
+  
+            switch (counter) {
+              case 0:
+                $('#hid').html('<b>It all started with the big bang</b>');
+                counter++;
+                break;
+              case 1:
+                $('#hid').html('<b>Then there were fluctuations</b>');
+                counter++;
+                break;
+              case 2:
+                $('#hid').html(
+                  '<b>Then there was joy and light everywhere to be seen</b>'
+                );
+                counter++;
+                break;
+              case 3:
+                $('#hid').html(
+                  '<b>There were times where this feature was enabled</b>'
+                );
+                counter++;
+                break;
+              case 4:
+                $('#hid').html(
+                  '<b>And you could make tridimentional sound-based mountains like these</b>'
+                );
+                counter++;
+                break;
+              case 5:
+                $('#hid').html(
+                  '<b>A colorful webpage that ended up being discarded</b>'
+                );
+                counter++;
+                break;
+              case 6:
+                $('#hid').html(
+                  '<b>That held multiple ways of seeing audio such as only mapping volume amplitude to waves</b>'
+                );
+                counter++;
+                break;
+              case 7:
+                $('#hid').html(
+                  '<b>Or creating waves and objects from nothing but your favourite file, like these</b>'
+                );
+                counter++;
+                break;
+              case 8:
+                $('#hid').html('<b>Then stars appeared</b>');
+                counter++;
+                break;
+              case 9:
+                $('#hid').html('<b>Some more powerful than others</b>');
+                counter++;
+                break;
+              case 10:
+                $('#hid').html('<b>Some very complex in nature</b>');
+                counter++;
+                break;
+              case 11:
+                $('#hid').html('<b>Others were simply beautiful</b>');
+                counter++;
+                break;
+              case 12:
+                $('#hid').html(
+                  '<b>But at the end, behind the scenes, at the backstage ... It is all ones and zeros</b>'
+                );
+                counter++;
+                break;
+              default:
+                $('#hid').html(
+                  '<b class="surprise">bEeP BoOp bOp! I detected you liked my slide, taking you to the beginning again in 3..2..1..<b>'
+                );
+                counter = 0;
+                break;
+            }
+            shared.fadeIn();
+          });
+        });
+        $('#hid').css('color', 'brown');
+        $('input').on('keypress', function (e) {
+          if (e.which == 13) {
+            $('body').css('background-color', $('input').val());
+            $('label').html(`Color changed!`);
+          }
+        });
+      });
+      // if (counter === 0) {
+      //   shared.attr('src', '/result.jpg');
+      // } else if (counter === 1) {
+      //   shared.attr('src', '/bodywp2.jpg');
+      // } else if (counter === 2) {
+      //   shared.attr('src', '/rainbow.jpg');
+      // } else if (counter === 3) {
+      //   shared.attr('src', '/rhombus.jpg');
+      // } else if (counter === 4) {
+      //   shared.attr('src', '/JLS-CCS.JPG');
+      // } else if (counter === 5) {
+      //   shared.attr('src', '/background.jpg');
+      //   counter = 0;
+      // }
+      // counter++;
+    </script>
+  </head>
+  <body>
+    <main>
+      <img src="placeholder.png" alt="" />
+      <button id="next">Start the slideshow</button>
+      <p id="hid"></p>
+      <label for="bg">background changer!</label>
+      <input id="bg" type="text" name="bg"/>
+    </main>
+  </body>
+</html>

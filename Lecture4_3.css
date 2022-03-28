@@ -1,0 +1,41 @@
+body
+{
+    background-color: #3366cc;
+}
+div
+{
+    background-color: #39c;    
+}
+.wrapper
+{
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+}
+.pisa
+{
+    margin-left: 17px;
+    float: right;
+    height: auto;
+    width: auto;
+    z-index: auto;
+    transform: scale(1.4,1.4);
+    transform: rotate(-5deg);
+    background-color: white;
+}
+.pisa:hover
+{
+    transform: rotate(0deg);
+}
+
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+p
+{
+    margin: 20px 0px;
+}

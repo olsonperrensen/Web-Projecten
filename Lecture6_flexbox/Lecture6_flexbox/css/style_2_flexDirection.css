@@ -1,0 +1,12 @@
+.flex-container {
+    width:50%;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}

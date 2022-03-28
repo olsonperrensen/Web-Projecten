@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let thebutton;
+      let timer;
+      function initializer() {
+        thebutton = document.getElementById(`IDforgotten`);
+        thebutton.addEventListener(`click`, startt, false);
+      }
+      function startt() {
+        timer = window.setInterval(getTime, 1000);
+      }
+      function getTime() {
+        let ddd = new Date();
+        ddd = ddd.getSeconds();
+        let div = document.getElementById(`emptyDIV`);
+        div.innerHTML = ddd;
+        let imgg = document.getElementsByTagName(`img`);
+        if(ddd == 30)
+        {
+          let plzstop = window.clearInterval(timer)
+        }
+      }
+    </script>
+  </head>
+  <body onclick="initializer()">
+    <div id="emptyDIV"></div>
+    <button id="IDforgotten">Click me</button>
+    <img
+      src="https://pictures.kare-design.com/5/KARE-51816-700x700.jpg"
+      alt=""
+    />
+    <button>Stop me</button>
+  </body>
+</html>

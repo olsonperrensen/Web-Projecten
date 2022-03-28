@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //   function testletitchange() {
+      //     let x = document.getElementById(`turtle`).getAttributeNames();
+      //     console.log(x);
+      //   }
+      //   function letitchange() {
+      //     let x = document
+      //       .getElementById(`turtle`)
+      //       .setAttribute(
+      //         `src`,
+      //         `https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/European_Wildcat_Nationalpark_Bayerischer_Wald_03.jpg/640px-European_Wildcat_Nationalpark_Bayerischer_Wald_03.jpg`
+      //       );
+      //   }
+      //   function letitchangebutonalink() {
+      //     document
+      //       .getElementById(`turtle`)
+      //       .style.setProperty(`border`, `16px solid pink`);
+      //   }
+    </script>
+    <script>
+      //   function fn() {
+      //     let thebutton = document.getElementById(`button`);
+      //     thebutton.style.backgroundColor = `red`;
+      //     thebutton.style.padding = `25px`;
+      //     thebutton.style.color = `white`;
+      //     thebutton.style.fontSize = `48px`;
+      //     thebutton.style.boxShadow = `inset 0 0 10px green`;
+      //     thebutton.innerHTML = `A click was made`;
+      //   }
+      //   function gofigure() {
+      //     let x = document
+      //       .getElementById(`paragraph`)
+      //       .setAttribute(`class`, `visible2`);
+      //   }
+      //   function oven() {
+      //     const newDiv = document.createElement('div');
+      //     const newContent = document.createTextNode('Hi there and greetings!');
+      //     newDiv.appendChild(newContent);
+      //     const currentDiv = document.getElementById('paragraph');
+      //     document.body.insertBefore(newDiv, currentDiv);
+      //   }
+    </script>
+    <style>
+      .visible2 {
+        background-color: aqua;
+      }
+    </style>
+    <script>
+      function createline() {
+        document
+          .getElementById(`par`)
+          .appendChild(document.createElement(`hr`));
+      }
+      function removeline() {
+        let myHR = document.getElementById(`par`);
+        myHR.removeChild(myHR.childNodes[1]);
+      }
+    </script>
+  </head>
+  <body>
+    <a href="javascript:createline()">Create Line</a>
+    <a href="javascript:removeline()">Remove Line</a>
+    <p id="par">This is a paragraph</p>
+
+    <!-- <button id="button" onclick="fn()">Click me</button>
+    <button onclick="gofigure()">
+      Figure out what classes a paragraph has
+    </button>
+    <p id="paragraph">paragraph</p>
+    <button onclick="oven()">Creatre</button> -->
+    <!-- <img
+      onclick="letitchange()"
+      id="turtle"
+      src="https://cdn.britannica.com/s:800x450,c:crop/66/195966-138-F9E7A828/facts-turtles.jpg"
+      alt=""
+    />
+    <a href="javascript:letitchangebutonalink()">bobcat</a> -->
+  </body>
+</html>

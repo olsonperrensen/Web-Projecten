@@ -1,0 +1,20 @@
+#olli2
+{
+list-style-type: upper-alpha;
+}
+
+#ulli2
+{
+list-style-type: circle;
+list-style-position: outside;
+}
+
+#olli3
+{
+list-style-type: upper-roman;
+}
+
+#ulli3
+{
+list-style-type: square;
+}

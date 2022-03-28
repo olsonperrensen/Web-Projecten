@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab3_4.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mailto:r0834721@student.thomasmore.be?subject=2-submit" method="POST" enctype="text/plain" autocomplete="on">
+        <fieldset>
+            <legend>
+                Personal Details
+            </legend>
+            <table>
+            <tr><td><label for="fn">Fist Name:</label></td>
+            <td><input type="text" name="fn" id="fn">
+            </td></tr>
+           <tr><td><label for="ln">Last Name:</label></td>
+            <td><input type="text" name="ln" id="ln">
+        </td></tr>
+            <tr><td><label for="em">Email:</label></td>
+            <td><input type="email" name="em" id="em">
+            </td></tr>
+            <tr><td><label for="gd">Gender:</label></td>
+            <td><input type="radio" name="gd" id="gd" value="isMale"><label for="gd">Male</label></td></tr>
+            <tr><td></td><td><input type="radio" name="gd" id="gd2" value="isFemale"> <label for="gd2">Female</label>
+        </td></tr>
+            <tr><td><label for="db">Date of Birth:</label></td>
+            <td><input type="date" name="db" id="db" value="dd/mm/jjjj" title="AAAA"></td>
+        </td></tr>
+            <tr><td><label for="ad">Home of address:</label></td>
+            <td>
+                <select name="provinceIs" id="pv">
+                    <option value="" disabled selected>Select below</option>
+                    <optgroup label="Flanders">  
+                        <option value="ANT" title="Antwerp">Antwerp</option>
+                        <option value="LIM" title="Limburg">Limburg</option>
+                        <option value="WV" title="West-Flanders">West-Flanders</option>
+                        <option value="OV" title="East-Flanders">East-Flanders</option>
+                        <option value="VB" title="Flemish-Brabant">Flemish-Brabant</option>
+                    </optgroup>
+                    <optgroup label="Capital Region">
+                        <option value="BRU" title="Brussels">Brussels</option>
+                    </optgroup>
+                    <optgroup label="Wallonie">
+                        <option value="LUX" title="Luxembourg">Luxembourg</option>
+                        <option value="NAM" title="Namur">Namur</option>
+                        <option value="LI" title="Liege">Liege</option>
+                        <option value="HAI" title="Hainaut">Hainaut</option>
+                        <option value="WALV" title="Walon-Brabant">Walon-Brabant</option>
+                    </optgroup>
+                </select></td>
+        </tr>
+        </table>
+        </fieldset>
+        <fieldset>
+<legend>Computer Details</legend>
+<table class="preQ">
+<tr>
+    <td><p class="Q"></p></td><td><input type="checkbox" name="IE" id="IE" value="hasIt"></td>
+    <td><img src="/startfileslab3/IE.png" alt="Internet Explorer Icon" title="IE's Icon"></td>
+    
+    <tr><td><p class="Q"></p></td><td><input type="checkbox" name="MOZ" id="MOZ" value="hasIt"></td>
+        <td><img src="/startfileslab3/MOZ.png" alt="Mozilla Icon" title="MOZ's Icon"></td>
+        
+        <tr><td><p class="Q">Which browsers do you have at your disposal?</p></td><td>
+            <input type="checkbox" name="OP" id="OP" value="hasIt"></td>
+            <td><img src="/startfileslab3/opera.png" alt="Opera Icon" title="OP's Icon"></td>
+            
+            <tr><td><p class="Q"></p></td><td><input type="checkbox" name="CH" id="CH" value="hasIt"></td>
+                <td><img src="/startfileslab3/chrome.png" alt="Chrome Icon" title="CH's Icon"></td>
+                
+                <tr><td><p class="Q"></p></td><td><input type="checkbox" name="NS" id="NS" value="hasIt"></td>
+                    <td><img src="/startfileslab3/netscape.png" alt="Netscape Icon" title="NS's Icon"></td>
+                    
+                    
+                        <tr><td><p class="Q"></p></td><td><input type="checkbox" name="OT" id="OT" value="hasIt"></td>
+                            <td class="other"><label for="OT">Other</label></td>
+                            
+                            <tr><td><p class="Q"></p>
+                                <tr><td><p class="Q"></p>
+                                    <tr><td><p class="Q"></p>
+
+</td></tr></table>
+<table>
+<tr><td><label for="Attachment">Add a picture of your computer here:</label></td>
+<td><input type="file" name="BST" id="Attachment"></td>
+</tr>
+</table>
+</fieldset>
+        <button type="reset">Erase the entered data</button>
+        <button type="submit">Send the entered data</button>
+    </form>
+</body>
+</html>

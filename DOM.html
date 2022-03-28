@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myFunction() {
+        document.forms['f'].elements['sum'].value =
+          parseInt(document.forms['f'].elements['num1'].value) +
+          parseInt(document.forms['f'].elements['num2'].value);
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" id="f">
+      <table>
+        <tr>
+          <td>Number 1</td>
+          <td><input type="text" id="num1" /></td>
+        </tr>
+        <tr>
+          <td>Number 2</td>
+          <td><input type="text" id="num2" /></td>
+        </tr>
+        <tr>
+          <td><input onclick="myFunction()" value="+" type="button" /></td>
+          <td><input type="text" name="" id="sum" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

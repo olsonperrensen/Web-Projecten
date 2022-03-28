@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>The Canvas element</title>
+  <link href="style_SVG.css" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="canvas1">
+    Your browser does not support canvas elements.
+  </canvas>
+
+  <script type="text/javascript">
+    var c=document.getElementById("canvas1");
+    var cxt=c.getContext("2d");
+    cxt.fillStyle="#FFFF00";
+    cxt.fillRect(0,0,150,100);
+    cxt.fillStyle="#FF0000";
+    cxt.font = 'italic bold 30px sans-serif';
+    cxt.fillText("HTML5 is cool",50,75);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+p::selection
+{
+    background-color: tomato;
+    color: blueviolet;
+}

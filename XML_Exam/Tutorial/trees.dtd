@@ -1,0 +1,9 @@
+<!ELEMENT forest (tree)*>
+<!ELEMENT tree (label, color, age, water)>
+<!ATTLIST tree isAlive CDATA "yes">
+<!ELEMENT label (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT water (type, liters)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT liters (#PCDATA)>

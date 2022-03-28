@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript application</title>
+</head>
+<body>
+    <h3>Calculation of the contents of a sphere</h3>
+    
+    <script>
+			/*The following script calculates the content of a sphere upon entering the radius*/
+			var radius, content;
+			const PI = 3.141592653589793; // kan ook met Math.PI
+			radius = parseFloat(prompt('Enter the radius of the sphere '));
+			content = 4*PI*radius*radius*radius/3;
+			document.write('<p>The content of a sphere with radius ' + radius +
+			' is '+ content + '</p>');
+    </script>
+</body>
+</html>

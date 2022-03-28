@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function initialize() {
+        let sapo = document.getElementById(`sapo`);
+        //sapo.addEventListener(`click`, showmessagee, false);
+        sapo.addEventListener(`mouseover`, showmessagee, false);
+        sapo.addEventListener(`mouseout`, showmessagee, false);
+        sapo.addEventListener(`dblclick`, showmessagee2, false);
+      }
+      function showmessagee() {
+        let e = window.event;
+        alert(`I have detected you have ${e.type}-ED on this element`);
+        console.log(window.event);
+      }
+      function showmessagee2() {
+        let e = window.event;
+        alert(`I have detected you have ${e.type}-ED on this element`);
+        let sapo = document.getElementById(`sapo`);
+        sapo.addEventListener(`click`, showmessagee, false);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <h1>Event detection</h1>
+    <div
+      id="sapo"
+      style="
+        background-color: aquamarine;
+        width: 20%;
+        border: 3px solid black;
+        text-align: center;
+      "
+    >
+      <p>Click this division</p>
+    </div>
+  </body>
+</html>

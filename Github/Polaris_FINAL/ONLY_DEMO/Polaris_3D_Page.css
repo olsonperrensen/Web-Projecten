@@ -1,0 +1,12 @@
+canvas
+{
+    transform: scale(1.5);
+    position: absolute;
+    right: 110px;
+    filter: invert(1);
+}
+body
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}

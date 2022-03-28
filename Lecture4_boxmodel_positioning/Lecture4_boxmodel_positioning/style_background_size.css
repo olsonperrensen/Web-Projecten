@@ -1,0 +1,14 @@
+body
+{
+	background:url(flowers.jpg);
+	-moz-background-size:80px 60px; /* Firefox */
+	background-size:80px 60px;
+	background-repeat:no-repeat;
+	padding-top:40px
+}
+	  
+img
+{
+	width:224px;
+	heigth:162px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //   console.log(
+      //     window.innerWidth,
+      //     window.innerHeight,
+      //     window.outerWidth,
+      //     window.outerHeight
+      //   );
+      //   let age = prompt(`What is your age?`);
+      //   let born = new Date().getFullYear() - age;
+      //   alert(born);
+      //   let name = prompt(`What is your name?`);
+      //   let sentence = confirm(
+      //     `Welcome ${name}. Do you wish to become a member?`
+      //   );
+
+      //   if (sentence) {
+      //     // same as doing if(sentence == true)
+      //     alert(`Thank you!`);
+      //   } else {
+      //     alert('See you next time');
+      //   }
+    </script>
+    <script>
+        function y() {
+          window.open(`https://ssl.com`);
+          document.write(`<p>This window opened on the following browser:</p>`);
+          document.write(`<p>${navigator.appCodeName}</p>`);
+          document.write(`<p>${navigator.userAgent}</p>`);
+          document.write(`<p>${navigator.appName}</p>`);
+          document.write(`<p>${navigator.appVersion}</p>`);
+          document.write(`<hr>`);
+          document.write(location.href);}
+    </script>
+    <script>
+      let flag = 'green';
+      let timer1;
+      function start_change(){
+        timer1 = window.setInterval(change, 1000)
+      }
+      function change() {
+        if (flag == `green`)
+        {
+          document.body.style.backgroundColor = 'red';
+          flag = `red`;
+        }
+        else if (flag == 'red')
+        {
+          document.body.style.backgroundColor = `green`;
+          flag = `green`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="y()">Click me to go to SSL</button>
+    <textarea
+      name="ancas"
+      id="ancas"
+      onclick="colour()"
+      placeholder="TIME WILL APPEAR HERE"
+      cols="190"
+      rows="10"
+    ></textarea>
+    <input type="email" onclick="start_change()" />
+    <script>
+      function colour() {
+        document.getElementById('ancas').style.backgroundColor = `magenta`;
+      }
+      //window.setTimeout(y, 1200)
+      function mydrie() {
+        let tijm = new Date();
+        document.getElementById(
+          'ancas'
+        ).innerHTML = `The current time is: ${tijm.getHours()}:${tijm.getMinutes()}:${tijm.getSeconds()}`;
+      }
+      let updater = window.setInterval(mydrie, 1000);
+
+      function stopfn() {
+        window.clearInterval(updater);
+      }
+    </script>
+    <button id="stop" onclick="stopfn()">STOP</button>
+  </body>
+</html>

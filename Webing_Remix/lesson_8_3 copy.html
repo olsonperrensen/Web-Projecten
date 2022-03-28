@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // let div1 = document.getElementById(`division1`);
+      // WILL EXECUTE AS SOON AS THE SCRIPT STARTS... BEFORE THE BODY IS LOADED...
+      // (null) IS NOT WHAT WE WANT
+      // let div2 = document.getElementById(`division2`); //
+
+      function mainfunction() {
+        let div1 = document.getElementById(`division1`);
+        let div2 = document.getElementById(`division2`);
+
+        div1.onclick = sideFunction1;
+        div2.onclick = sideFunction1;
+        div1.onmouseover = sideFunction2;
+        div2.onmouseover = sideFunction2;
+        div1.onmouseout = sideFunction3;
+        div2.onmouseout = sideFunction3;
+      }
+
+      function sideFunction1() {
+        let div1 = document.getElementById(`division1`);
+        let div2 = document.getElementById(`division2`);
+        div1.innerText = `CLICK ED`;
+        div2.innerText = `CLICK ED`;
+      }
+
+      function sideFunction2() {
+        let div1 = document.getElementById(`division1`);
+        let div2 = document.getElementById(`division2`);
+        div1.innerText = `MOUSE OVER ED`;
+        div2.innerText = `MOUSE OVER ED`;
+      }
+
+      function sideFunction3() {
+        let div1 = document.getElementById(`division1`);
+        let div2 = document.getElementById(`division2`);
+        div1.innerText = `MOUSE OUT ED`;
+        div2.innerText = `MOUSE OUT ED`;
+      }
+    </script>
+  </head>
+  <body onload="mainfunction()">
+    <div id="division1">sample1</div>
+    <div id="division2">sample2</div>
+  </body>
+</html>

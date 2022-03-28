@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var x = 0;
+      while (x <= 100) {
+        document.write(`<p>I am going to get ${x}</p>`);
+        x += 10;
+      }
+    </script>
+    <script>
+      for (let counter = 0; counter <= window.innerWidth; counter += 100) {
+        document.write(`<h2>I am expanding ${counter} amount of times </h2>`);
+      }
+    </script>
+    <script>
+    //   while (this) {
+    //     let _stop = prompt('Enter your full name to stop');
+    //     if (_stop == 'MARTIN GARRIX') {
+    //       break;
+    //     }
+    //   }
+    </script>
+    <script>
+    //   var counter = 1;
+    //   var promptt = parseInt(prompt(`Enter an even number`));
+    //   var dividend = promptt % 2;
+    //   if (dividend != 0) {
+    //     counter++;
+    //     document.write(
+    //       `Your number is not even. Try again. You have tried this ${counter} amount of times`
+    //     );
+    //   }
+    //   else if (promptt % 2 === 0) {
+    //     confirm('Congratulations! Click OK to receive a prize.');
+    //   }
+    </script>
+    <script>
+        for(let x in this)
+        {
+            console.log(`${x} is a property of this`)
+        }
+    </script>
+  </head>
+  <body>
+    <style>
+      h2 {
+        background-color: aqua;
+      }
+    </style>
+  </body>
+</html>

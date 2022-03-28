@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function displayme() {
+        let x = prompt(`Say hello to the camera`);
+        alert(x);
+      }
+      function multipleThings() {
+        let PLACEHOLDER;
+        let counter = 0;
+        let Arr = [
+          document.getElementById(`Welcome`),
+          document.getElementById(`Enter`),
+          document.getElementById(`Confirmation`),
+          document.getElementById(`CurrentURL`),
+          document.getElementById(`Escapecode`),
+        ];
+        for (PLACEHOLDER in Arr) {
+          Arr[PLACEHOLDER].style.backgroundColor = 'purple';
+          alert(
+            `Element number ${counter++} starting... Please do not shut down your system!`
+          );
+        }
+      }
+    </script>
+  </head>
+  <body onload="multipleThings()">
+    <button id="Welcome">Welcome</button>
+    <a id="Enter" href="javascript:displayme()">Enter your code</a>
+    <button id="Confirmation">Confirmation</button>
+    <button id="CurrentURL">CurrentURL</button>
+    <button id="Escapecode">Escapecode</button>
+  </body>
+</html>

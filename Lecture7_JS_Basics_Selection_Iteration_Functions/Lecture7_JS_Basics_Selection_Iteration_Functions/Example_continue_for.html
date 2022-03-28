@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8" />
+<title>continue</title>
+</head>
+
+<body>
+  <p>
+	<script>
+    
+		var number=parseFloat(prompt('Enter a number'));
+		
+		for (counter=1; counter <= 10; counter++ ) 
+		{ 
+			if (counter % 2 == 0)
+			{	
+				continue;
+			}
+			document.write(counter+' times '+ number + ' = ' + counter * number+ '<br />');	
+		}
+    
+    </script>
+  </p>
+</body>
+</html>

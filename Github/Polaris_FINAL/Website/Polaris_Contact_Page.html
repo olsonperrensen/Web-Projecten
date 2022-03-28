@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_Shared_Page.css" />
+    <link rel="stylesheet" href="Polaris_Contact_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script defer src="ghost-typer.js"></script>
+    <script>
+      $(function () {
+        $('#ghost').ghosttyper({
+          messages: [
+            'Contact Me.',
+            'I will get a mail',
+            'With all your doubts',
+            'maybe compliments',
+            'critics',
+            'It does not matter',
+            'Start now',
+          ],
+          timeWrite: 210,
+          timeDelete: 120,
+          timePause: 1000,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome_Page.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_About_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_CV_Page.html">Curriculum Vitae</a></li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li>
+            <a href="Polaris_Demonstration_Page.html">Live! Demonstration</a>
+          </li>
+          <li>
+            <a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a>
+          </li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Search_Page.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn id="ghost"></dfn>
+        </div>
+        <div class="maintext">
+          <form
+            action="mailto:r0834721@student.thomasmore.be"
+            name="myForm"
+            onsubmit="return _fnctionThatValidatesTheContactForm()"
+            method="GET"
+          >
+            <p>
+              <label for="l1">your name *</label>
+              <input id="l1" type="text" name="name" class="inform" />
+            </p>
+            <p>
+              <label for="l2">your email *</label>
+              <input id="l2" type="email" name="email" class="inform" />
+            </p>
+            <p>
+              <label for="l3">your phone number *</label>
+              <input id="l3" type="number" name="phoneNumber" class="inform" />
+            </p>
+            <p>
+              <label for="l4">topic of discussion *</label>
+              <textarea id="l4" name="question" cols="30" rows="10"></textarea>
+            </p>
+            <button type="submit">Send it.</button>
+            <button
+              type="reset"
+              id="regretButton"
+              onclick="return _regretFuntcion()"
+            >
+              I regret.
+            </button>
+            <div>
+              <p id="myRequiredFieldWarningAlert">
+                !!! ! !!! !!! ** Please fill everyting before sending... **
+                !!!!!! ! !!! ! !!
+              </p>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+    <script>
+      function _fnctionThatValidatesTheContactForm() {
+        var v = document.forms['myForm']['name'].value;
+
+        var x = document.forms['myForm']['email'].value;
+
+        var y = document.forms['myForm']['phoneNumber'].value;
+
+        var z = document.forms['myForm']['question'].value;
+        if (v == '' || x == '' || y == '' || z == '') {
+          document.getElementById(
+            'myRequiredFieldWarningAlert'
+          ).style.visibility = 'visible';
+          return false;
+        }
+      }
+      function _regretFuntcion() {
+        document.getElementById(
+          'myRequiredFieldWarningAlert'
+        ).style.visibility = 'hidden';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript application</title>
+  <script>
+    function fahrenheit2Celsius(f)
+    {
+      	var c;
+      	c = 5*(f-32)/9;    
+      	return c;         //or shorter:  return 5*(f-32)/9;
+    }
+
+    function createRow(one,two)
+    {
+      	document.write('<tr><td>'+one+'</td><td>'+two+'</td></tr>');
+    }
+  </script>
+</head>
+<body>
+  <h3>Temperature table</h3>
+  <script>
+    var fahr, cels;
+
+    document.write('<table border="1">');
+    document.write('<tr><th>Fahrenheit</th><th>Celsius</th></tr>');
+    for(fahr=-10; fahr<=100; fahr+=5)
+    {
+      cels=fahrenheit2Celsius(fahr);
+      createRow(fahr,cels.toFixed(2));
+    }
+    document.write('</table>');
+  </script>
+</body>
+</html>

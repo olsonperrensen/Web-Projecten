@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resett.css">
+    <link rel="stylesheet" href="lecture4part3brownform.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demonstration of the form element</h1>
+    <h2>Place here your reaction.</h2>
+    <form action="">
+
+        <fieldset>
+        <legend>My data</legend>
+        <div class="radio1">
+        <input type="radio" id="mm" name="gender">
+        <label for="mm">Mr.</label>
+        <input type="radio" name="gender" id="ff">
+        <label for="ff">Mrs.</label>
+        </div>
+        <label class="llabel" for="fullname">first name and last name</label>
+        <input class="lllabel" type="text" name="geborte" id="fullname">
+        <label class="llabel" for="mail">email</label>
+        <input class="lllabel" type="email" name="email" id="mail">
+    </fieldset>
+    <fieldset>
+        <legend>Type of reaction</legend>
+        <input type="file" name="choose" id="upload">
+    </fieldset>
+    <fieldset>
+        <legend>My reaction</legend>
+        <textarea name="write" id="large" cols="30" rows="10"></textarea>
+        <input class="checkbox" type="checkbox" name="tick" id="click">
+        <label for="click">Send a copy to me by email.</label>
+    
+    </fieldset>
+    </form>
+    <button type="submit">Send</button>
+</body>
+</html>

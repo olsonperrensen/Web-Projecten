@@ -1,0 +1,19 @@
+Introduction HTML 
+Paragraphs (with <strong> and <em>) 
+A web page consists of hypertext, which is text with references to other documents or places within the same document. Web pages consist of HTML (Hyper Text Markup Language) code and are intended to be viewed with a web browser. The browser converts the source code to a readable page. Hypertext links in the HTML code make it easy to navigate from one page to another, an activity also known as surfing the Internet.
+HTML is used to describe the components (headers, paragraphs, images, ... ) of a web page.
+CSS (Cascading Style Sheets) are used to determine the style (fonts, colours, white spaces, ...) of the web document. This paragraph is centred in a 10-point Courier. (text-align:center; font-family:courier; font-size:10pt;)
+Special characters are also possible: < ë ♥ © ±
+Words with special characters: HTML & CSS, garçon, "    " (four spaces between quotation marks).
+GPS coordinates: 52°22′30″ north latitude and 4°54′30″ east longitude.
+Note: There are several double and single quotation marks: '(quot), '(ldquo), '(rdquo), '(prime), '(acute), '(lsquo), '(rsquo), '(sbquo), ′(prime).
+A line 
+A pre-block: 
+    #include <stdio.h>
+    void main()
+    {
+        printf ("Hello world\n");
+    }
+
+
+Translated with www.DeepL.com/Translator (free version)

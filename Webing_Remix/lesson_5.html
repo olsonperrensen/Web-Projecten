@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let planets = [
+        'Sun',
+        'Mercury',
+        'Venus',
+        'Earth',
+        'Mars',
+        'Jupiter',
+        'Saturn',
+        'Neptune',
+        'Uranus',
+        'Pluto',
+      ];
+      document.write(`<p>${planets[0]}</p>`);
+      document.write(`<p>${planets[1]}</p>`);
+      document.write(`<p>${planets[2]}</p>`);
+      document.write(`<p>${planets[3]}</p>`);
+      document.write(`<p>${planets[4]}</p>`);
+      document.write(`<p>${planets[5]}</p>`);
+      document.write(`<p>${planets[6]}</p>`);
+      document.write(`<p>${planets[7]}</p>`);
+      document.write(`<p>${planets[8]}</p>`);
+      document.write(`<p>${planets[9]}</p>`);
+      document.write(`<p>${planets[10]} does not exist</p>`);
+      document.write(planets);
+
+      document.write(
+        `<p><b>Total size (without push) :</b>${planets.length}</p>`
+      );
+
+      planets.push(`Outer-Rocks`);
+      document.write(`<p><b>After push: </b>${planets}</p>`);
+      document.write(`<p><b>Total size (with push) :</b>${planets.length}</p>`);
+
+      document.write(`<p><b>Alphabetically ordered: </b>${planets.sort()}</p>`);
+
+      document.write(
+        `<p><b>Reverse-Alphabetically ordered:</b>${planets.reverse()}</p>`
+      );
+    </script>
+    <script>
+      let myarr = [4, 57, 43, 66, 93, 2, 48, 72, 29, 69];
+
+      function numSort(var1, var2) {
+        return var2 - var1;
+      }
+
+      function numSort2(var1, var2) {
+        return var1 - var2;
+      }
+
+      document.write(`<p>${myarr}</p>`);
+      document.write(`<p>${myarr.sort()}</p>`);
+      document.write(`<p>${myarr.reverse()}</p>`);
+      document.write(`<p>${myarr.sort(numSort)}</p>`);
+      document.write(`<p>${myarr.sort(numSort2)}</p>`);
+
+      document.write(`<p>${planets.join('...DOT...')}</p>`);
+
+      let myWaters = [`Purified`, `H2O`, `Eco`];
+
+      document.write(`<p>${myWaters}</p>`);
+
+      //document.write(`<p>${myWaters.pop()}</p>`);
+
+      document.write(`<p>${myWaters.shift()}</p>`);
+
+      document.write(`<p>${myWaters}</p>`);
+    </script>
+    <script>
+      //   let myy = ['JAN', 'FEB', 'MAR', 'APR'];
+      //   for (let x in myy)
+      //   {
+      //       document.write(`<h3>${myy[x]}</h3><hr>`)
+      //   }
+      //   for (let x = 0; x < myy.length; x++)
+      //   {
+      //     document.write(`<h3>${myy[x]}</h3><hr>`)
+      //   }
+      //   myy.push(`MAY`);
+      //   for (let x in myy)
+      //   {
+      //       document.write(`<h3>${myy[x]}</h3><hr>`)
+      //   }
+    </script>
+    <script>
+      let datt = new Date();
+      console.log(datt);
+      console.log(`${datt.getHours()}:${datt.getMinutes()}`);
+
+      if (datt.getHours() > 7 && datt.getHours() < 12) {
+        confirm('Is this the morning?');
+      } else if (datt.getHours() > 12 && datt.getHours() < 18) {
+        confirm('Is this the afternoon?');
+      } else if (datt.getHours() > 18 && datt.getHours() < 24) {
+        confirm('Is this the evening?');
+      } else {
+        confirm('Is this the night?');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

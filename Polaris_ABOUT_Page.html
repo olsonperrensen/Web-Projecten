@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Polaris_ABOUT_Page.css" />
+    <script src="jquery-3.6.0.js"></script>
+    <script src="Polaris_ABOUT_Page.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="headerimg">
+          <img class="bear" src="/Icons/PO.png" alt="logo" />
+          <span>Welcome to Polaris: An Audio & Visual Web Player</span>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="Polaris_Welcome.html">Home</a></li>
+          <li class="project">
+            <a href="Polaris_Project_Page.html"><p>Project</p></a>
+            <ul class="hidd">
+              <li>
+                <a href="Polaris_ABOUT_Page.html"><p>About</p></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Polaris_CV_Page.html">Curriculum Vitae</a></li>
+          <li><a href="Polaris_Contact_Page.html">Contact</a></li>
+          <li><a href="">Live! Demonstration</a></li>
+          <li><a href="Polaris_FAQ_Page.html">Frequently Asked Questions</a></li>
+          <li>
+            <label for="search">Search</label>
+            <input type="text" id="search" />
+            <button
+              type="submit"
+              onclick="window.location.href='Polaris_Result_Search.html'"
+            >
+              Go
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainimage">
+          <img class="background" src="bodywp.png" alt="" />
+          <dfn> Polaris</dfn>
+        </div>
+        <div class="maintext">
+          <strong><a href="#PLAY" onclick="myFn()">PLAY</a></strong>
+          <hr />
+          <strong><a href="#VIEW" onclick="myFn2()">VIEW</a></strong>
+          <hr />
+          <strong><a href="#SHARE" onclick="myFn3()">SHARE</a></strong>
+        </div>
+        <div class="polaris_container" id="PLAY">
+          <p class="p1">
+            SHOW US YOUR TASTELorem ipsum dolor sit amet consectetur adipisicing
+            elit. Mollitia quod fugiat nisi natus nihil molestiae hic, expedita
+            ipsam consectetur voluptates? Laborum ipsa dolorem libero ad
+            accusamus nihil beatae tempore alias? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Commodi reprehenderit voluptatibus
+            libero quibusdam aspernatur in rem saepe, eos explicabo quam
+            voluptatum neque cum molestias eum nesciunt nobis facere similique.
+            Quas.
+          </p>
+          <img class="polaris_alpha" src="Polaris_About_GIF_1.gif" alt="" />
+        </div>
+        <div class="polaris_container" id="VIEW">
+          <p class="p2">
+            EXPRESS YOURSELFLorem ipsum dolor sit amet consectetur adipisicing
+            elit. Mollitia quod fugiat nisi natus nihil molestiae hic, expedita
+            ipsam consectetur voluptates? Laborum ipsa dolorem libero ad
+            accusamus nihil beatae tempore alias? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Commodi reprehenderit voluptatibus
+            libero quibusdam aspernatur in rem saepe, eos explicabo quam
+            voluptatum neque cum molestias eum nesciunt nobis facere similique.
+            Quas.
+          </p>
+          <img class="polaris_beta" src="Polaris_About_GIF_2.gif" alt="" />
+        </div>
+        <div class="polaris_container" id="SHARE">
+          <p class="p3">
+            ENJOY THE MOMENT we don't use cookiesLorem ipsum dolor sit amet
+            consectetur adipisicing elit. Mollitia quod fugiat nisi natus nihil
+            molestiae hic, expedita ipsam consectetur voluptates? Laborum ipsa
+            dolorem libero ad accusamus nihil beatae tempore alias? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Commodi reprehenderit
+            voluptatibus libero quibusdam aspernatur in rem saepe, eos explicabo
+            quam voluptatum neque cum molestias eum nesciunt nobis facere
+            similique. Quas.
+          </p>
+          <img class="polaris_delta" src="Polaris_About_GIF_3.gif" alt="" />
+        </div>
+        <div class="container">
+          <a href="Polaris_Empty_Template.html"><button id="thebutton">Try it now</button></a>
+        </div>
+      </main>
+      <footer>
+        <p>
+          Copyright © Thomas More Mechelen-Antwerp vzw -Campus De Nayer
+          -Professional bachelor electronics-ict -2021
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let naam, lnaam, clickmee;
+      function initialize() {
+        naam = document.getElementById(`naam`);
+        lnaam = document.getElementById(`lnaam`);
+        clickmee = document.getElementById(`clickme`);
+
+        let hijd = document.getElementById(`theresult`);
+        hijd.focus();
+
+        clickmee.addEventListener(`click`, clickme, false);
+      }
+      function clickme() {
+        if (naam.value == '' || lnaam.value == '') {
+          alert(`Fill everything before clicking send.`);
+        } else {
+          alert(`Thank you for your cooperation.`);
+        }
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <form action="#">
+      <label for="naam">Name</label>
+      <input id="naam" type="text" />
+      <label for="lnaam">Last Name</label>
+      <input id="lnaam" type="text" />
+      <button id="clickme">Click</button>
+      <label for="theresult">The secret formula</label>
+      <input id="theresult" type="password" />
+    </form>
+  </body>
+</html>

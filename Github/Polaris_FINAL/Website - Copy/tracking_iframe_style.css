@@ -1,0 +1,92 @@
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+.start {
+  background: rgb(81, 75, 165);
+  color: white;
+}
+.break {
+  background: rgb(0, 199, 116);
+  color: #000000;
+}
+.reset {
+  background: rgb(250, 69, 109);
+  color: #000000;
+}
+.pause {
+  background: rgb(253, 143, 17);
+}
+.resume {
+  background: rgb(10, 252, 220);
+  color: white;
+}
+.clock {
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+}
+
+.clock,
+.mins,
+.secs,
+.progress-ring,
+.progress-ring__circle,
+.btn-group,
+.clock_ciphers {
+  color: black;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+}
+
+.clock_ciphers
+{
+  position: fixed;
+  top: 28%;
+  left: 90.85%;
+}
+
+.btn-group {
+  position: fixed;
+  top: 15%;
+  left: 87.9%;
+}
+
+.progress-ring__circle {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(34, 108, 219);
+}
+
+.danger {
+  stroke: rgb(228, 15, 25);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+.show_message {
+  display: block;
+  color: #bb041da1;
+  background: #000000;
+  border-radius: 0.6rem;
+  transition: 0.5s ease;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}

@@ -1,0 +1,20 @@
+p
+{
+    padding: 20px;
+    margin: 40px 10px 40px 10px;
+}
+.titleone
+{
+    border: solid 6px red;
+}
+.titletwo
+{
+    border: dashed 6px green;
+}
+.titlethree
+{
+    border-top: solid 6px green;
+    border-right: dotted 6px black;
+    border-bottom: solid 6px blue;
+    border-left: dotted 6px black;
+}

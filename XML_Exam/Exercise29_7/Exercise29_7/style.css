@@ -1,0 +1,19 @@
+table{
+  border:1px solid black;
+  border-collapse: collapse;
+  width: 800px;
+  margin: auto;
+}
+
+td, th{
+  border: 1px solid black;
+}
+
+img{
+  width:30px;
+  height: 20px;
+}
+
+.center{
+  text-align:center;
+}

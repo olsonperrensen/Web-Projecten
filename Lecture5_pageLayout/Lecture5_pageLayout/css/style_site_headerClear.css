@@ -1,0 +1,44 @@
+/* general styles */
+body{
+	font-family:Arial
+  }
+
+h1{
+	font-size: 175%;
+	padding: 10px;
+	margin: 10px;
+}
+h2 {
+	font-size: 150%;
+	padding: 10px;
+	margin: 10px;
+}
+h3 {
+	font-size: 125%;
+	padding: 10px;
+	margin: 10px;
+}
+p {
+	padding: 10px;
+	margin: 10px;
+}
+/*---------------------------------------------------------------------------------------*/
+/* style the full page */
+.wrapper{
+	min-width:500px;
+	max-width:1200px;
+	margin:0px auto 0px auto;
+	background-image: url('../img/background-tile.png');
+}
+/*---------------------------------------------------------------------------------------*/
+/* style the header elements */
+.logo{
+	width:150px;
+	float:left;
+}
+
+header::after {
+	content:"";
+	display: block;
+	clear: both;
+}

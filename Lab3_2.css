@@ -1,0 +1,19 @@
+fieldset
+{
+    border: solid 1px black;
+    height: 720px;
+    width: 400px;   
+}
+
+.mg
+{
+    margin: 7px;
+}
+input
+{
+    margin: 8px;
+}
+.needsmargin
+{
+    margin: 92px;
+}

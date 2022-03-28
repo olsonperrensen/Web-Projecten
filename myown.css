@@ -1,0 +1,26 @@
+table
+{
+    border: solid 4px black;
+    height: 400px;
+    width: 400px;
+    background-image: url("rhombus.jpg");
+}
+td
+{
+    border: solid 1px black;
+    padding: 2%;
+    background-image: url("https://i.ibb.co/tBNHZvx/Cover.jpg");
+    color: white;
+    text-decoration: underline goldenrod;
+}
+body
+{
+    background-image: url("https://technoaide.s3.amazonaws.com/store/products/xlarge/JLS-CCS.JPG");
+    background-repeat: repeat-x repeat-y 
+}
+.table2
+{
+    margin-top: -420px;
+    margin-left: 45%;
+    border: solid 8px peachpuff;
+}

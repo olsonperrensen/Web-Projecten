@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstName, lastName, street, streetNumber, postCode, municipality;
+        firstName = prompt('What is your first name?');
+        lastName = prompt('What is your last name?'); 
+        street = prompt('What is your street name?'); 
+        streetNumber =  parseInt(prompt('What is your street number?'));
+        postCode  = parseInt(prompt('What is your post code number?')); 
+        municipality =  prompt('What is your municipality?');
+        document.write('<p>Your data was entered as the following: </p>' + '<p>Your first name was: ' + 
+            firstName + '</p>' + '<p>Your last name was: ' + lastName + '</p>'
+        + '<p>Your street was: ' + street + '</p>' + '<p>Your street number was: ' + streetNumber + '</p>' + 
+        '<p>Your post code was: ' + postCode + '</p>' + '<p>Your municipality was: ' + municipality 
+        + '</p>');        
+    </script>
+</body>
+</html>

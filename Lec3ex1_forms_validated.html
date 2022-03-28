@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Lec3ex1_forms.css">
+        <title>++++New Page++++</title>
+    </head>
+<body>
+    <form action="mailto:r0834721@student.thomasmore.be?subject=formresult" 
+    method="POST" enctype="text/plain">
+        <label for="search">Prefix:</label>
+        <input type="text" name="userAnswer" id="search" placeholder="Your question?">
+        <br>
+        <br>
+        <label for="11">Checkbox1:</label>
+        <input type="checkbox" name="CHF1" id="11">
+        <label for="22">Checkbox2:</label>
+        <input type="checkbox" checked="checked" name="CHF2" id="22">
+        <br>
+        <br>
+        <label for="radio-t-1">Option 1:</label>
+        <input type="radio" name="circles-choice" id="radio-t-1" value="1st">
+        <br>
+        <label for="radio-t-2">Option 2:</label>
+        <input type="radio" name="circles-choice" id="radio-t-2" value="2nd">
+        <br>
+        <label for="radio-t-3">Option 3:</label>
+        <input type="radio" name="circles-choice" id="radio-t-3" checked value="3rd">
+        <br>
+        <input type="submit"/>
+        <input type="reset" />
+        <input type="button" value="I do nothing!">    
+    </form>
+        <br>
+        <form action="mailto:r0834721@student.thomasmore.be?subject=2-submit" 
+        method="POST" enctype="text/plain">
+            <input type="submit" value="Submit 2"/>
+        </form>
+</body>
+</html>

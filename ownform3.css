@@ -1,0 +1,53 @@
+p
+{
+    margin-top: 12px;
+}
+label
+{
+    float: left;
+    width: 17%;
+    text-align: left;
+    margin-right: 60px;
+    margin-left: 12px;
+    /*or ...  text-align: right;
+    margin-right: 6px; for real close
+    to input */
+    border: dashed 3px springgreen;
+}
+input
+{
+    background-color: seashell;
+    width: 60%;
+}
+form
+{
+    border: solid 2px silver
+}
+fieldset
+{
+    border: groove 2px salmon
+}
+legend
+{
+    background-color: sandybrown;
+    color: wheat;
+}
+img
+{
+    width: 290px;
+    float: left;
+}
+.alter
+{
+    border: solid 3px darkmagenta;
+    background-color: darksalmon;
+    color: white;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.footer
+{
+    clear: both;
+}

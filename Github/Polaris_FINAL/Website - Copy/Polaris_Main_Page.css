@@ -1,0 +1,19 @@
+* {
+    margin: 50px auto;
+    box-sizing: border-box;
+    background: black;
+}
+
+#canvas1 {
+  display: flex;    
+}
+#audio1, #fileupload{
+    width: 100%;
+    display: block;
+    background: blanchedalmond;
+}
+canvas{
+  border: groove 1px mediumaquamarine;
+  margin-bottom: 50px;
+  width: 100%;
+}

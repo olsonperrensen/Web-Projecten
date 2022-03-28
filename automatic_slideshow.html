@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Oefening 19.6</title>
+    <link href="stijl_Oefening19_6.css" rel="stylesheet" />
+
+    <script>
+        var cyclenumber = 0;
+        var images = 3;
+        var array = [images];
+        var interval;
+        var interval2;
+        var equalizerTimer;
+        var clicked = 0;
+        var counter = 1;
+
+        function startcycle() {
+            interval = window.setInterval("cycle()", 1000);
+        }
+
+        function stopcycle() {
+            window.clearInterval(interval);
+        }
+
+        function switchcycle() {
+
+            if (clicked % 2) {
+                stopcycle();
+                finish();
+            }
+            else {
+                startcycle();
+                document.getElementById("bar").style.width = 0 + "px";
+                document.getElementById("loadinggif").style.display = 'block'
+                counter = 1;
+            }
+            clicked++;
+            document.getElementById("count1").innerHTML = "clicked = " + clicked;
+        }
+
+        function finish() {
+            for(counter; counter <= 7; counter++)
+                {
+                    document.getElementById("bar").style.width = (counter*(600/7))+"px"
+                }
+                document.getElementById("loadinggif").style.display = 'none'
+        }
+
+        function loading() {
+            for (var idx = 0; idx <= images; idx++) {
+                array[idx] = "slideshow" + (idx + 1) + ".png";
+            }
+        }
+
+        function cycle() {
+            var x = document.getElementById("slideshow");
+            document.getElementById("bar").style.width = (counter*(600/7))+"px";
+            document.getElementById("count2").innerHTML = "counter = " + counter;
+
+            if (counter == 7) {
+                if (cyclenumber < images) {
+                    cyclenumber++;
+                    x.src = array[cyclenumber]
+                }
+                else {
+                    cyclenumber = 0;
+                    x.src = array[cyclenumber]
+                }
+                counter = 0;
+            }
+            counter++;
+        }
+    </script>
+</head>
+
+<body onload="loading();">
+
+    <div class="imagesbox">
+        <div id="portfolio">
+            <img src="slideshow1.png" id="slideshow" alt="slideshow" />
+        </div>
+
+        <div id="button" onclick="switchcycle()">
+            <img src="loading.gif" alt="loading" id="loadinggif">
+
+            <div id="loadingbar">
+                <div id="bar"></div>
+            </div>
+
+            <a href="#" id="startcycle">
+                <img id="btnCycle" src="cyclebutton.png" />
+            </a>
+        </div>
+    </div>
+
+    <p id="count1">clicked = 0</p>
+    <p id="count2">counter = 0</p>
+</body>
+
+</html>

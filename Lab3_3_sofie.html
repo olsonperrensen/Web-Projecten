@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab3_3_sofie.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#THX_RESULTS_ON_LEFT" method="GET" enctype="text/plain" name="form">
+        <fieldset>
+            <h1>StuVo survey</h1>
+            <hr>
+            <p>What do you think about:</p>
+            
+            <table>
+                <tr>
+                    <th></th>               <!--the first column of the first line is not used => insert empty cell-->
+                    <th>Bad</th>            <!--I have changed the td into th to get the centering and the bold for free-->
+                    <th>Reasonable</th>
+                    <th>Good</th>
+                    <th>Very good</th>
+                    <th>No opinion</th>
+                </tr>
+                <tr>
+                    <td class="textLabel">
+                        <label for="A1">Quality of the sandwitches</label>      <!--a tr tag can only have td tags as children=> put the label in the first cell-->
+                    </td>                                                       <!--in this case, linking the label to the radio buttons has no meaning since clicking the label should not result in selecting one of the radio buttons-->
+                                    <!--<span class="radio">        a span can not contain cells => I have removed it-->
+                    <td>
+                        <input type="radio" name="A1" id="A1" value="A1">
+                    </td>
+                    <td>
+                        <input type="radio" name="A1" id="A2" value="A2">       <!--you can not use the same id twice on a page-->
+                    </td>      
+                    <td>
+                        <input type="radio" name="A1" id="A3" value="A3">  <!--you can leave out the id's all together since it makes no sence here to link it to the text-->
+                    </td>
+                    <td>
+                        <input type="radio" name="A1" id="A4" value="A4">
+                    </td>
+                    <td>
+                        <input type="radio" name="A1" id="A5" value="A5">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textLabel">
+                        <label>Price of the sandwitches</label>
+                    </td> 
+                    <td>
+                        <input type="radio" name="B1" value="B1">
+                    </td>
+                    <td>
+                        <input type="radio" name="B1" value="B2">
+                    </td>
+                    <td>
+                        <input type="radio" name="B1" value="B3">
+                    </td>
+                    <td>
+                        <input type="radio" name="B1" value="B4">
+                    </td>
+                    <td>
+                        <input type="radio" name="B1" value="B5">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textLabel">
+                        <label>Quality of warm food</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="C1" value="C1">
+                    </td>
+                    <td>
+                        <input type="radio" name="C1" value="C2">
+                    </td>
+                    <td>
+                        <input type="radio" name="C1" value="C3">
+                    </td>
+                    <td>
+                        <input type="radio" name="C1" value="C4">
+                    </td>
+                    <td>
+                        <input type="radio" name="C1" value="C5">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textLabel">
+                        <label>Price of warm food</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="D1" value="D1">
+                    </td>
+                    <td>
+                        <input type="radio" name="D1" value="D2">
+                    </td>
+                    <td>
+                        <input type="radio" name="D1" value="D3">
+                    </td>
+                    <td>
+                        <input type="radio" name="D1" value="D4">
+                    </td>
+                    <td>
+                        <input type="radio" name="D1" value="D5">
+                    </td>
+                </tr>
+            </table> 
+            <hr />
+            <button type="submit">Send</button>
+            <button type="reset">Restart</button>
+        </fieldset>
+    </form>
+</body>
+</html>

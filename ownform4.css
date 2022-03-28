@@ -1,0 +1,28 @@
+label
+{
+    float: left;
+    width: 200px;
+    margin-right: 120px;
+    margin-left: 40px;
+}
+input
+{
+    margin-bottom: 20px;
+}
+legend
+{
+    background-color: brown;
+    color: white;
+    border:solid 4px white ;
+}
+form
+{
+width: 60%;
+margin:auto;
+margin-top: 20px;
+}
+fieldset
+{
+background-color: beige;
+border:solid 3px violet;
+}

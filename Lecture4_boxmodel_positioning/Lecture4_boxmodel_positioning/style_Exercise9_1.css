@@ -1,0 +1,30 @@
+img {
+	float: right;
+	background-color: white;
+	margin-left:10px;
+	transform: rotate(-5deg);
+}
+
+img:hover {
+	transform: rotate(0deg);
+}
+
+body {
+	background-color: #3366CC;
+}
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	margin:20px 0px;
+}
+
+p {
+	margin: 20px 0px;
+}
+
+div {
+	background-color: #39C;
+	width:75%;
+	margin: auto;
+	padding:20px 20px 20px 10px;
+}

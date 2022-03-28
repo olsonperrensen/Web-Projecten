@@ -1,0 +1,90 @@
+body {
+	background-color: #999999;
+}
+p {
+	padding: 25px;
+	background: #FFF;
+	border-bottom: 1px solid #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+p span#title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+p span.bold {
+	font-weight: bold;
+}
+
+
+#day_night {
+	width: 100%;
+	padding-top: 15px;
+}
+#day_night #day a {
+	background: url(../images/sun.png);
+	display: block;
+	float: left;
+	height: 85px;
+	width: 86px;
+	margin-left: 60px;
+	text-indent: -9999em;
+}
+#day_night #night a {
+	background: url(../images/moon.png);
+	display: block;
+	float: right;
+	height: 87px;
+	width: 87px;
+	margin-right: 60px;
+	text-indent: -9999px;
+}
+#wrapper {
+	width: 500px;
+	margin: 0px auto;
+}
+#wrapper #nav {
+	width: 115px;
+	position: absolute;
+	z-index: 3;
+	padding: 4px;
+	border: 1px solid #677798;
+	background: #DFE2E3;
+}
+#wrapper #nav a  {
+	display: block;
+	height: 49px;
+	width: 49px;
+	float: left;
+	margin-left: 6px;
+	margin-bottom: 6px;
+}
+
+#wrapper #tree {
+	background: url(../images/tree.png);
+	height: 640px;
+	width: 423px;
+	margin: 40px auto;
+	position: absolute;
+	z-index: 2;
+}
+#wrapper #tree table {
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrapper #tree table tr {
+	height: 95px;
+}
+#wrapper #tree table td {
+	text-align: center;
+}
+#snow  {
+	background: #FFF url(../images/bg_snow.png) repeat-x;
+	height: 600px;
+	position: absolute;
+	z-index: 1;
+	margin-top: 488px;
+	width: 100%;
+}

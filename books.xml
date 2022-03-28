@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" ref="style_books.xsl" ?>
+<books>
+<book>
+<writer>Norma Huidobro</writer>
+<title>El cuadro sin firma</title>
+<isbn>9223271111082</isbn>
+</book>
+<book>
+<writer>Edgardo Ares</writer>
+<title>Nosotros Caminamos en Suenos</title>
+<isbn>9233273111039</isbn>
+</book>
+<book>
+<writer>Patricio Velarga</writer>
+<title>Octubre un Crimen</title>
+<isbn>900238921109907</isbn>
+</book>
+</books>

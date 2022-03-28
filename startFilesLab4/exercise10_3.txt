@@ -1,0 +1,9 @@
+<h2>HTML5</h2>
+                HTML5
+                
+                HTML5 (HyperText Markup Language 5) is the latest, finished version of the HTML standard. This new language contains the functionality of both HTML and XHTML. Furthermore, HTML5 also improves the minor flaws of its predecessor and provides better support for web applications. The term HTML5 is also used as a marketing term, where in addition to HTML version 5 also surrounding techniques such as CSS3, JavaScript, XML, JSON and SVG are included in the definition. HTML5 has been a W3C standard (recommendation) since October 2014.[1] However, several HTML5 functions were already implemented in some web browsers before the official publication of the W3C standard, based on earlier versions of the HTML standard (e.g. the candidate recommendation). These functions were then used by some websites. 
+                
+                The origin
+                
+                In mid-April 2007, the Web Hypertext Application Technology Working Group (WHATWG) submitted a proposal to the W3C working group to use 'their' HTML 5 as a starting point for further HTML development. Further wishes were that the name 'HTML5' would be given an official&euml;le status and that Ian Hickson of the WHATWG would continue to work on the specification. The results of the survey and circ;te conducted by the W3C working group show great support for the three proposals; only a few of the 102 members who took part in the referendum voted against. Apple's Dave Hyatt was also appointed as editor for HTML5 on a pro forma basis. He was put forward by the WHATWG to accompany Hickson when the W3C group indicated &eacute;n editor was lacking. In the future, the team of editors may be expanded, according to the W3C.
+                

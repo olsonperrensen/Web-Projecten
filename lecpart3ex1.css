@@ -1,0 +1,24 @@
+table
+{
+    border:solid black 1px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 450px;
+}
+td
+{
+    background-color: chartreuse;
+    border:solid black 1px;
+}
+.red
+{
+    background-color: red;
+}
+#exception
+{
+ width: 50%;   
+}
+caption
+{
+    caption-side: bottom;
+}

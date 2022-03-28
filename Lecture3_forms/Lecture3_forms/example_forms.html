@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>A webpage with a form</title>
+    <link href="style_forms.css" rel="stylesheet" />
+  </head>
+  <body>
+  <h1>A webpage with a form</h1>
+  <hr />
+  <form method="post"
+        action="mailto:james.jones@student.thomasmore.be?subject=resultForm"
+        enctype="text/plain">
+    <p>
+      Enter your first name:
+      <input type="text" name="fname" />
+    </p>
+    <p>
+      Zip code:
+      <input type="text" name="zip" maxlength="4" value="2860" />
+    </p>
+    <hr />
+     
+    <p>
+    	Choose your color(s):<br />
+      	<input type="checkbox" name="red" /> Red <br />
+      	<input type="checkbox" name="green" checked="checked" /> Green <br />
+      	<input type="checkbox" name="blue" /> Blue <br />
+    </p>
+    <hr />
+
+    <p>
+    	Gender:
+      	<input type="radio" name="gender" value="female" /> female
+      	<input type="radio" name="gender" value="male" /> male
+		<!-- remark: same name, different value  -->
+    </p>
+    <hr />
+
+    <p>
+        Region:
+        <select name="region">
+              <option value="Fl">Flanders</option>
+              <option value="Wal">Waloon region</option>
+              <option value="Bru">Brussels</option>			
+        </select>
+    </p>
+    <hr />
+
+    <p>
+    	Remarks:<br />
+    	<textarea name="remarks"></textarea>
+    </p>
+    <hr />
+ 
+    <p>
+    	<input type="submit" value="Send" />
+    	<input type ="reset" value="Reset" />
+    </p>
+  </form>
+</body>
+</html>

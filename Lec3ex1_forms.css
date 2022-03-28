@@ -1,0 +1,38 @@
+.label1
+{
+margin: 20px;
+text-align: right;
+}
+.label2
+{
+ margin: 20px;
+ text-align: right;   
+}
+
+
+
+
+fieldset
+{
+    background-color: lightgoldenrodyellow;
+    border-collapse: collapse;
+}
+legend
+{
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    border: dotted 10px pink;
+    padding: 0%;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 12px;
+    width: 100%;
+}
+
+form
+{
+    background-color: thistle;
+    text-align: center;
+    margin: 70px;
+}

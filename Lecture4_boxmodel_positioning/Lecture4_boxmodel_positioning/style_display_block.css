@@ -1,0 +1,12 @@
+a.inline{
+	display:inline;
+}
+a.block{
+	display:block;
+}
+a.none{
+	display:none;
+}
+a.gone{
+	visibility:hidden;
+}

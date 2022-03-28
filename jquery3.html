@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam
+      reiciendis non molestiae consectetur. Optio, adipisci? Officiis
+      consectetur officia repudiandae, fuga, quibusdam id esse expedita,
+      molestias nobis adipisci molestiae eius. Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Architecto similique natus, dolorum error
+      modi, nisi quidem dolorem id minima delectus repellendus. Nulla dolorem
+      error repudiandae perferendis voluptas soluta aspernatur. Ullam! Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Omnis, non maiores.
+      Placeat, dicta in laudantium culpa illo, sequi ipsa modi id facilis,
+      magnam repellat odit tenetur quam deleniti! Perferendis, quidem? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora
+      natus dolore, harum inventore fuga! Consectetur nemo quo ad quod officiis
+      quos placeat commodi, saepe pariatur non itaque modi. Odit. Lorem Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus,
+      ipsum asperiores reiciendis iste vero laboriosam id aliquid sint dicta est
+      nihil, animi facilis sequi voluptates aspernatur quo numquam libero.
+    </div>
+    <a href="#">Please click me!</a>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+      let counter = 0;
+      $(function () {
+        $('a').dblclick(function () {
+          if (counter === 0) {
+            $('div').show();
+            counter++;
+            console.log(counter)
+          }
+          else {
+            $('div').hide();
+            counter--;
+            console.log(counter)
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

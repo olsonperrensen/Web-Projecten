@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="Lec3ex1_forms.css">
+        <title>++++New Page++++</title>
+    </head>
+<body>
+    <form action="#" 
+    method="get">
+        <label class="label1" for="search">Prefix:</label>
+        <input class="formCell1" type="text" name="userAnswer" id="search" placeholder="Your question?">
+        <br>
+        <br>
+        <label class="label2" for="search2">Prefix2:</label>
+        <input class="formCell2" type="text" name="userAnswer2" id="search2" placeholder="Your answer 2">
+        <br>
+        <br>
+        <label for="11">Checkbox1:</label>
+        <input type="checkbox" name="CHF1" id="11">
+        <label for="22">Checkbox2:</label>
+        <input type="checkbox" checked="checked" name="CHF2" id="22">
+        <br>
+        <br>
+        <label for="radio-t-1">Option 1:</label>
+        <input type="radio" name="circles-choice" id="radio-t-1" value="1st">
+        <br>
+        <label for="radio-t-2">Option 2:</label>
+        <input type="radio" name="circles-choice" id="radio-t-2" value="2nd">
+        <br>
+        <label for="radio-t-3">Option 3:</label>
+        <input type="radio" name="circles-choice" id="radio-t-3" checked value="3rd">
+        <br>
+        <input type="submit"/>
+        <input type="reset" />
+        <input type="button" value="I do nothing!">    
+    </form>
+
+
+        <br>
+    
+    <form action="mailto:r0834721@student.thomasmore.be?subject=2-submit" 
+        method="POST" enctype="text/plain">
+        <fieldset>
+            <legend>My fieldset!</legend>
+        <input type="submit" value="Submit 2"/>
+
+        <input type="password" value="pwd" name="pwd" />
+      
+        
+        <input type="url" name="url" id="url1" list="url1-datalist" placeholder="only urls allowed">
+        <datalist id="url1-datalist">
+            <option value="https://www.cloudfire.com">Cloudfire</option>
+            <option value="https://www.audioz.download">AudioWareZ</option>
+            <option value="https://www.benelux.nl">BeNeLux Webpage</option>
+            <option value="https://www.avast.com">Avast</option>
+            <option value="https://www.thomasmore.be">Thomas More</option>
+            <option value="https://www.kuloket.be"></option>
+        </datalist>
+      
+        <textarea name="textarea" id="ar" cols="2" rows="2" placeholder="insert your large 
+        text here"></textarea>
+
+        <select name="multiplechoice" id="MCH1">
+        
+            <option value="NL01">Nederland</option>
+            <option value="BE02">Belgie</option>
+            <option value="LU03">Luxembourg</option>
+        
+        </select>
+        <input type="color" name="color" id="color">
+        <input type="text" pattern="[A-Za-z]{3}" 
+        title="Three letter country code" name="pattern" id="pattern"
+        placeholder="3-letters">        
+       </fieldset>
+    </form>
+</body>
+</html>

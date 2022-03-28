@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml -stylesheet type="text/css" href="sXML.css"?>
+<contacts>
+<contact type="private">
+<name>
+Bjorn
+</name>
+<firstname>
+Anderson
+</firstname>
+<lastname>
+Freere
+</lastname>
+<address>
+
+<street>
+Stockholmsestraat 197 28C
+</street>
+<postalcode>
+18270
+</postalcode>
+<municipality>
+Stockholm
+</municipality>
+</address>
+
+<phone>
++2711223344556677
+</phone>
+</contact>
+<contact type="public">
+<name>Viktor</name>
+<firstname>Sjal</firstname>
+<lastname>Larette</lastname>
+<address>
+<street>Vilhoheentolm</street>
+<postalcode>BH992</postalcode>
+<municipality>Turku</municipality>
+</address>
+<phone>
++481122334455
+</phone>
+</contact>
+</contacts>

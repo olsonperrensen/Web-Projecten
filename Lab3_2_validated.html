@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Lab3_2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="mailto:r0834721@student.thomasmore.be" method="post" 
+enctype="text/plain" autocomplete="on" id="linkingone">
+    <fieldset>
+<legend class="mg">Your details:</legend>
+
+<label for="field1">Name:</label>
+    <input type="password" name="field1" id="field1" 
+    placeholder="This is a placeholder">
+
+    <p><label>Gender:</label></p>
+    
+    <p><label for="radione">Male</label>
+        
+        <input type="radio" name="radione" id="radione" value="M"/> 
+
+    <label for="raditwo">Female</label>
+
+        <input type="radio" name="radione" id="raditwo" value="F"/></p>
+
+    <label>Hail Color:</label>
+
+        <p> <label for="11">black</label><input type="checkbox" name="hairone" id="11" 
+            value="BLK"/></p> 
+        
+        <p> <label for="22">brown</label><input type="checkbox" name="hairone" id="22" 
+            value="BR"/></p>
+        
+        <p> <label for="33">blond</label><input type="checkbox" name="hairone" id="33" 
+            value="BLD"></p>  
+  
+<hr>
+
+<p><label for="pv">Province:</label></p>
+    <select name="s1" id="pv">
+        <optgroup label="Flanders">
+            <option value="ANT" title="Antwerp">Antwerp</option>
+            <option value="LIM" title="Limburg">Limburg</option>
+            <option value="ANT" title="Antwerp">West-Flanders</option>
+            <option value="ANT" title="Antwerp">East-Flanders</option>
+            <option value="ANT" title="Antwerp">Flemish-Brabant</option>
+        </optgroup>
+        <optgroup label="Capital Region">
+            <option value="BRU" title="Brussels">Brussels</option>
+        </optgroup>
+        <optgroup label="Wallonie">
+            <option value="ANT" title="Luxembourg">Luxembourg</option>
+            <option value="LIM" title="Namur">Namur</option>
+            <option value="ANT" title="Liege">Liege</option>
+            <option value="ANT" title="Hainaut">Hainaut</option>
+            <option value="ANT" title="Walon-Brabant">Walon-Brabant</option>
+        </optgroup>
+    </select>
+    <hr>
+<p><textarea name="t1" id="t1" cols="47" rows="10" placeholder="If you have additional notes, please add them here"></textarea>
+</p>
+<button type="submit">Send me now!</button>
+<button type="reset" class="needsmargin">Forget about it!</button>
+</fieldset>
+</form>
+</body>
+</html>

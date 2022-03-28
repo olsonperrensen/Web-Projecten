@@ -1,0 +1,30 @@
+form
+{
+    border: solid 1px black;
+}
+fieldset
+{
+    border: solid 4px gold;
+}
+img
+{
+    margin-left: 20px;
+    height: 50x;
+    width: 50px;
+}
+.other
+{
+    text-align: center;
+}
+.preQ
+{
+margin: 0px 0px;
+}
+.QQ
+{
+padding: auto;
+}
+/*td
+{
+    border: solid;
+}

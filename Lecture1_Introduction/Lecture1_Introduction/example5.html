@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>A webpagina with Javascript</title>
+</head>
+
+<body>
+  <h1>A webpagina with Javascript</h1>
+  <h2>Table of multiplication</h2>
+  <script>
+   
+    var counter;
+    var base;
+
+    base = parseInt(prompt("Enter the base number: "));
+    document.write('<h3>Table of multiplication of '+base+'</h3>');
+    document.write('<p>');
+
+    for (counter=1;counter<=20;counter++)
+    {
+      document.write(counter+' x '+base+' = '+(counter*base)+'<br />');
+    }
+    document.write('</p>');
+  
+  </script>
+</body>
+</html>

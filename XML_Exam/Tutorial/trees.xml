@@ -1,0 +1,47 @@
+﻿<?xml 
+version="1.0" 
+encoding="UTF-8"
+standalone="no" 
+ ?>
+<!--<!DOCTYPE forest SYSTEM "trees.dtd">-->
+
+<forest 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="trees.xsd">
+
+  <tree isAlive="yes">
+
+    <label>0</label>
+    <color>Light brown</color>
+    <age>132</age>
+    <water>
+      <type>microwater</type>
+      <liters>20</liters>
+    </water>
+
+  </tree>
+  
+  <tree isAlive="yes">
+
+    <label>1</label>
+    <color>Dark brown</color>
+    <age>80</age>
+    <water>
+      <type>natural</type>
+      <liters>74</liters>
+    </water>
+
+  </tree>
+
+  <tree isAlive="no">
+
+    <label>2</label>
+    <color>Light brown</color>
+    <age>632</age>
+    <water>
+      <type></type>
+      <liters></liters>    
+    </water>
+  </tree>
+  
+</forest>

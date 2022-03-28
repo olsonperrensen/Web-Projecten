@@ -1,0 +1,51 @@
+span {
+  background-color: cadetblue;
+}
+.bear {
+  background-color: darkblue;
+}
+.maintext {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.faqcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.faqmastercontainer {
+  display: flex;
+}
+.sidep {
+  font-size: 1rem;
+}
+* {
+  background-color: #9467f9;
+}
+table {
+  table-layout: fixed;
+  width: 90%;
+  text-align: center;
+}
+.table {
+  display: flex;
+  justify-content: center;
+}
+table,
+caption,
+tr,
+td {
+  border: 1px solid white;
+  background-color: gainsboro;
+  color: goldenrod;
+  padding: 8px;
+}
+table {
+  margin: 20px;
+}
+#bg2,
+#bg {
+  margin: 10px;
+}

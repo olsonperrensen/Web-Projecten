@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="address.xsl" ?>
+<addresses>
+<address>
+<firstname>Joris</firstname>
+<lastname>Dieltiens</lastname>
+<place>Antwerp</place>
+</address>
+<address>
+<firstname>Joris</firstname>
+<lastname>Geens</lastname>
+<place>Halle</place>
+</address>
+<address>
+<firstname>Lars</firstname>
+<lastname>Struyf</lastname>
+<place>Mechelen</place>
+</address>
+</addresses>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript application</title>
+  <script>
+     function input()
+     {
+       document.getElementById("output").innerHTML='Here are the instructions for "input"';
+     }
+     function search()
+     {
+       document.getElementById("output").innerHTML='Here are the instructions for "search"';
+     }
+     function list()
+     {
+       document.getElementById("output").innerHTML='Here are the instructions for "list"';
+     }
+     function end()
+     {
+       document.getElementById("output").innerHTML='end';
+     }
+  </script>
+</head>
+<body>
+  <h3>Database menu</h3>
+  <p id="output"></p>
+  <script>
+    var choice;
+    do
+    {
+      choice=prompt('Enter a choice (I: input; S: search; L: list; E: end): ', 'E');
+      switch(choice)
+      {
+        case 'I' :
+        case 'i' : input(); break;
+        case 'S' :
+        case 's' : search(); break;
+        case 'L' :
+        case 'l' : list(); break;
+        case 'E' :
+        case 'e' : end(); break;
+        default:  document.getElementById("output").innerHTML='Invalid choice';    
+      }
+    } while (choice!='E' && choice != 'e');  
+  </script>
+</body>
+</html>
